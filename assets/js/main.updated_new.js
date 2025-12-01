@@ -1086,16 +1086,13 @@
               margin: 0,
               responsiveClass: !0,
               nav: !1,
-              autoplay: true,
-              autoplayTimeout: 3000,
-              autoplayHoverPause: true,
               navText: [
                 '<i class="icon-angle-left">',
                 '<i class="icon-angle-right">',
               ],
               dots: !0,
-              //   autoplay: !1,
-              //   autoplayTimeout: 15e3,
+              autoplay: !1,
+              autoplayTimeout: 15e3,
               items: 1,
             },
             i = function (i, o) {
@@ -1180,6 +1177,12 @@
                 },
               },
               ".products-slider": {
+                // loop: !1,
+                // margin: 20,
+                // autoplay: !1,
+                // dots: !0,
+                // items: 2,
+                // responsive: { 576: { items: 3 }, 992: { items: 4 } },
                 loop: true,
                 margin: 20,
                 autoplay: true,
@@ -1187,12 +1190,10 @@
                 autoplayHoverPause: true,
                 smartSpeed: 600,
                 dots: true,
-                nav: true,
                 items: 2,
                 responsive: {
                   576: { items: 3 },
-                  768: { items: 5 },
-                  992: { items: 5 },
+                  992: { items: 4 },
                 },
               },
               ".categories-slider": {
@@ -2504,3 +2505,70 @@
         c.scrollBtnAppear();
       });
   })(jQuery);
+
+
+
+
+/* --- PRODUCTS-SLIDER IMAGE MISSING FIX (appended) ---
+   Ensures Owl Carousel refreshes after images load and prevents
+   'appear-animate' from hiding cloned/active slides' images.
+   Safe: does not remove animations globally, only forces visible
+   state inside the .products-slider carousel and refreshes when needed.
+----------------------------------------------------- */
+(function($){
+  'use strict';
+
+  $(function(){
+    var $slider = $('.products-slider');
+    if (!$slider.length) return;
+
+    function unhideAppear($el){
+      $el.find('.appear-animate').each(function(){
+        var $this = $(this);
+        // mark as visible so CSS animations won't keep it hidden
+        $this.removeClass('appear-animate').addClass('appear-animation-visible');
+      });
+    }
+
+    // Refresh carousel after images are loaded to ensure cloned items have loaded images
+    if ($.fn.imagesLoaded) {
+      $slider.imagesLoaded().always(function(){
+        try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+        unhideAppear($slider);
+      });
+    } else {
+      // fallback: on window load
+      $(window).on('load', function(){
+        try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+        unhideAppear($slider);
+      });
+    }
+
+    // When carousel initializes or finishes a translation, ensure appear elements inside are visible
+    $slider.on('initialized.owl.carousel translated.owl.carousel initialize.owl.carousel', function(){
+      unhideAppear($(this));
+    });
+
+    // On translate ensure active images are loaded; if not, reassign src to trigger load
+    $slider.on('translated.owl.carousel', function(){
+      $(this).find('.owl-item.active img').each(function(){
+        if (!this.complete || this.naturalWidth === 0) {
+          var $img = $(this);
+          var src = $img.attr('src');
+          if (src) {
+            // add cache buster to force reload if browser treated it as broken clone
+            var sep = src.indexOf('?') === -1 ? '?' : '&';
+            $img.attr('src', src + sep + '_=' + Date.now());
+          }
+        }
+      });
+    });
+
+    // Extra safety: when window resizes refresh the carousel (helps layout issues)
+    $(window).on('resize', function(){
+      try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+    });
+
+  });
+})(jQuery);
+/* --- end appended fix --- */
