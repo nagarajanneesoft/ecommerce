@@ -13401,8 +13401,7 @@ span.toggle:before {
   text-transform: uppercase;
 }
 .single .post-title {
-  margin-bottom: -8px;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #08c;
   font-weight: 700;
   font-family: Poppins, sans-serif;

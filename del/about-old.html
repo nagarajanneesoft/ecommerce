@@ -28,6 +28,7 @@
             "Open+Sans:300,400,600,700,800",
             "Poppins:300,400,500,600,700",
             "Shadows+Into+Light:400",
+            "Playfair+Display:900",
           ],
         },
       };
@@ -44,7 +45,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- Main CSS File -->
-    <!-- <link rel="stylesheet" href="assets/css/style.min.css" /> -->
     <link rel="stylesheet" href="assets/css/demo4.min.css" />
     <link
       rel="stylesheet"
@@ -66,7 +66,12 @@
                     <li>
                       <a href="#"><i class="mr-2"></i>My Profile</a>
                     </li>
-
+                    <li>
+                      <a href="#"><i class="mr-2"></i>SuperCoin Zone</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Flipkart Plus Zone</a>
+                    </li>
                     <li>
                       <a href="#"><i class="mr-2"></i>Orders</a>
                     </li>
@@ -126,41 +131,63 @@
                 <!-- End .header-menu -->
               </div>
               <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+              <div class="social-icons">
+                <a
+                  href="#"
+                  class="social-icon social-facebook icon-facebook"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-twitter icon-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-instagram icon-instagram"
+                  target="_blank"
+                ></a>
+              </div>
+              <!-- End .social-icons -->
             </div>
             <!-- End .header-right -->
           </div>
           <!-- End .container -->
         </div>
         <!-- End .header-top -->
-        <div class="header-middle sticky-header">
+
+        <div
+          class="header-middle sticky-header"
+          data-sticky-options="{'mobile': true}"
+        >
           <div class="container">
-            <div class="header-left">
-              <button class="mobile-menu-toggler" type="button">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <button
+                class="mobile-menu-toggler text-primary mr-2"
+                type="button"
+              >
                 <i class="fas fa-bars"></i>
               </button>
-
-              <a href="index.html" class="logo w-100">
-                <img src="assets/images/logo.png" alt="Porto Logo" />
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/images/logo.png"
+                  width="111"
+                  height="44"
+                  alt="Porto Logo"
+                />
               </a>
-
-              <nav class="main-nav w-100">
-                <ul class="menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Sales</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Cars</a></li>
-                </ul>
-              </nav>
             </div>
             <!-- End .header-left -->
 
-            <div class="header-right">
+            <div class="header-right col-lg-4 w-auto">
               <div
                 class="header-icon header-search header-search-inline header-search-category w-lg-max text-right mt-0"
               >
+                <a href="#" class="search-toggle" role="button"
+                  ><i class="icon-search-3"></i
+                ></a>
                 <form action="#" method="get">
                   <div class="header-search-wrapper">
                     <input
@@ -183,12 +210,35 @@
                 </form>
               </div>
               <!-- End .header-search -->
+
+              <!-- End .dropdown -->
             </div>
             <!-- End .header-right -->
           </div>
           <!-- End .container -->
         </div>
         <!-- End .header-middle -->
+
+        <div
+          class="header-bottom sticky-header d-none d-lg-block bg-primary text-white"
+          data-sticky-options="{'mobile': false}"
+        >
+          <div class="container">
+            <nav class="main-nav w-100">
+              <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Cars</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-bottom -->
       </header>
       <!-- End .header -->
 
@@ -202,6 +252,7 @@
         >
           <div class="container">
             <h1><span>ABOUT US</span> OUR COMPANY</h1>
+            <a href="contact.html" class="btn btn-dark">Contact</a>
           </div>
           <!-- End .container -->
         </div>
@@ -211,7 +262,7 @@
           <div class="container">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">
-                <a href="index.html"><i class="icon-home"></i></a>
+                <a href="demo4.html"><i class="icon-home"></i></a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
                 About Us
@@ -237,6 +288,12 @@
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
               type and scrambled it to make a type specimen book.
+            </p>
+
+            <p class="lead">
+              “ Many desktop publishing packages and web page editors now use
+              Lorem Ipsum as their default model search for evolved over
+              sometimes by accident, sometimes on purpose ”
             </p>
           </div>
           <!-- End .container -->
@@ -384,27 +441,6 @@
                       >
                     </li>
                   </ul>
-                  <div class="social-icons">
-                    <a
-                      href="#"
-                      class="social-icon social-facebook icon-facebook"
-                      target="_blank"
-                      title="Facebook"
-                    ></a>
-                    <a
-                      href="#"
-                      class="social-icon social-twitter icon-twitter"
-                      target="_blank"
-                      title="Twitter"
-                    ></a>
-                    <a
-                      href="#"
-                      class="social-icon social-instagram icon-instagram"
-                      target="_blank"
-                      title="Instagram"
-                    ></a>
-                  </div>
-                  <!-- End .social-icons -->
                 </div>
                 <!-- End .widget -->
               </div>
