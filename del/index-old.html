@@ -103,38 +103,36 @@
         </div>
         <!-- End .header-top -->
 
-        <div class="header-middle sticky-header">
+        <div
+          class="header-middle sticky-header"
+          data-sticky-options="{'mobile': true}"
+        >
           <div class="container">
-            <div class="header-left">
-              <button class="mobile-menu-toggler" type="button">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <button
+                class="mobile-menu-toggler text-primary mr-2"
+                type="button"
+              >
                 <i class="fas fa-bars"></i>
               </button>
-
-              <a href="index.html" class="logo w-100">
-                <img src="assets/images/logo.png" alt="Porto Logo" />
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/images/logo.png"
+                  width="111"
+                  height="44"
+                  alt="Porto Logo"
+                />
               </a>
-
-              <nav class="main-nav w-100">
-                <ul class="menu">
-                  <li class="active">
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Sales</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Cars</a></li>
-                </ul>
-              </nav>
             </div>
             <!-- End .header-left -->
 
-            <div class="header-right">
+            <div class="header-right col-lg-4 w-auto">
               <div
                 class="header-icon header-search header-search-inline header-search-category w-lg-max text-right mt-0"
               >
-                
+                <a href="#" class="search-toggle" role="button"
+                  ><i class="icon-search-3"></i
+                ></a>
                 <form action="#" method="get">
                   <div class="header-search-wrapper">
                     <input
@@ -157,12 +155,37 @@
                 </form>
               </div>
               <!-- End .header-search -->
+
+              <!-- End .dropdown -->
             </div>
             <!-- End .header-right -->
           </div>
           <!-- End .container -->
         </div>
         <!-- End .header-middle -->
+
+        <div
+          class="header-bottom sticky-header d-none d-lg-block bg-primary text-white"
+          data-sticky-options="{'mobile': false}"
+        >
+          <div class="container">
+            <nav class="main-nav w-100">
+              <ul class="menu">
+                <li class="active">
+                  <a href="index.html">Home</a>
+                </li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Cars</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-bottom -->
       </header>
       <!-- End .header -->
 

@@ -28,6 +28,7 @@
             "Open+Sans:300,400,600,700,800",
             "Poppins:300,400,500,600,700",
             "Shadows+Into+Light:400",
+            "Playfair+Display:900",
           ],
         },
       };
@@ -44,7 +45,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <!-- Main CSS File -->
-    <!-- <link rel="stylesheet" href="assets/css/style.min.css" /> -->
     <link rel="stylesheet" href="assets/css/demo4.min.css" />
     <link
       rel="stylesheet"
@@ -66,7 +66,12 @@
                     <li>
                       <a href="#"><i class="mr-2"></i>My Profile</a>
                     </li>
-
+                    <li>
+                      <a href="#"><i class="mr-2"></i>SuperCoin Zone</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Flipkart Plus Zone</a>
+                    </li>
                     <li>
                       <a href="#"><i class="mr-2"></i>Orders</a>
                     </li>
@@ -126,41 +131,63 @@
                 <!-- End .header-menu -->
               </div>
               <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+              <div class="social-icons">
+                <a
+                  href="#"
+                  class="social-icon social-facebook icon-facebook"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-twitter icon-twitter"
+                  target="_blank"
+                ></a>
+                <a
+                  href="#"
+                  class="social-icon social-instagram icon-instagram"
+                  target="_blank"
+                ></a>
+              </div>
+              <!-- End .social-icons -->
             </div>
             <!-- End .header-right -->
           </div>
           <!-- End .container -->
         </div>
         <!-- End .header-top -->
-        <div class="header-middle sticky-header">
+
+        <div
+          class="header-middle sticky-header"
+          data-sticky-options="{'mobile': true}"
+        >
           <div class="container">
-            <div class="header-left">
-              <button class="mobile-menu-toggler" type="button">
+            <div class="header-left col-lg-2 w-auto pl-0">
+              <button
+                class="mobile-menu-toggler text-primary mr-2"
+                type="button"
+              >
                 <i class="fas fa-bars"></i>
               </button>
-
-              <a href="index.html" class="logo w-100">
-                <img src="assets/images/logo.png" alt="Porto Logo" />
+              <a href="index.html" class="logo">
+                <img
+                  src="assets/images/logo.png"
+                  width="111"
+                  height="44"
+                  alt="Porto Logo"
+                />
               </a>
-
-              <nav class="main-nav w-100">
-                <ul class="menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="#">Marketplace</a></li>
-                  <li><a href="#">Business</a></li>
-                  <li><a href="#">Sales</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Cars</a></li>
-                </ul>
-              </nav>
             </div>
             <!-- End .header-left -->
 
-            <div class="header-right">
+            <div class="header-right col-lg-4 w-auto">
               <div
                 class="header-icon header-search header-search-inline header-search-category w-lg-max text-right mt-0"
               >
+                <a href="#" class="search-toggle" role="button"
+                  ><i class="icon-search-3"></i
+                ></a>
                 <form action="#" method="get">
                   <div class="header-search-wrapper">
                     <input
@@ -183,116 +210,158 @@
                 </form>
               </div>
               <!-- End .header-search -->
+
+              <!-- End .dropdown -->
             </div>
             <!-- End .header-right -->
           </div>
           <!-- End .container -->
         </div>
         <!-- End .header-middle -->
+
+        <div
+          class="header-bottom sticky-header d-none d-lg-block bg-primary text-white"
+          data-sticky-options="{'mobile': false}"
+        >
+          <div class="container">
+            <nav class="main-nav w-100">
+              <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Cars</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-bottom -->
       </header>
       <!-- End .header -->
 
-      <main class="main">
-        <!-- <div class="page-header">
-          <div class="container d-flex flex-column align-items-center">
-            <nav aria-label="breadcrumb" class="breadcrumb-nav">
-              <div class="container">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-
-                  <li class="breadcrumb-item active" aria-current="page">
-                    Login
-                  </li>
-                </ol>
-              </div>
-            </nav>
-
-            <h1>Login</h1>
+      <main class="main about">
+        <div
+          class="page-header page-header-bg text-left"
+          style="
+            background: 50% / cover #d4e1ea
+              url('assets/images/page-header-bg.jpg');
+          "
+        >
+          <div class="container">
+            <h1><span>ABOUT US</span> OUR COMPANY</h1>
+            <a href="contact.html" class="btn btn-dark">Contact</a>
           </div>
-        </div> -->
-
-        <div class="container reset-password-container">
-          <div class="login-card">
-            <div class="row justify-content-center">
-              <!-- left: blue panel -->
-              <div class="col-sm-3 bg-primary">
-                <div class="p-5">
-                  <h4 class="text-white">Login</h4>
-                  <p class="text-white">
-                    Get access to your Orders, Wishlist and Recommendations
-                  </p>
-                </div>
-              </div>
-
-              <!-- right: merged feature-box + your form -->
-              <div class="col-sm-5">
-                <div class="container-fluid">
-                  <div class="">
-                    <!-- use col-lg-3 and col-lg-6 layout like your snippet; adjust for centering -->
-                    <div class="">
-                      <div
-                        class="feature-box border-top-primary"
-                        style="margin-bottom: 0px"
-                      >
-                        <div class="feature-box-content">
-                          <form class="mb-0" id="loginForm">
-                            <div class="form-group mb-3">
-                              <label
-                                for="reset-email"
-                                class="font-weight-normal"
-                                >Username or email</label
-                              >
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="reset-email"
-                                name="reset-email"
-                                placeholder="Enter email or username"
-                                required
-                              />
-                            </div>
-
-                            <div class="mb-2">
-                              <label
-                                class="font-weight-normal small text-muted"
-                              >
-                                By continuing, you agree to Flipkart's
-                                <a href="#">Terms of Use</a> and
-                                <a href="#">Privacy Policy</a>.
-                              </label>
-                            </div>
-
-                            <div class="form-footer mb-0">
-                              <button
-                                type="submit"
-                                class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
-                                id="requestOtpBtn"
-                              >
-                                Request OTP
-                              </button>
-                            </div>
-
-                            <div class="text-center mt-3">
-                              <label class="font-weight-normal m-0 p-0">
-                                <a href="#"
-                                  >New to Flipkart? Create an account</a
-                                >
-                              </label>
-                            </div>
-                          </form>
-                        </div>
-                        <!-- feature-box-content -->
-                      </div>
-                      <!-- feature-box -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- login-row -->
-          </div>
-          <!-- login-card -->
+          <!-- End .container -->
         </div>
+        <!-- End .page-header -->
+
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="demo4.html"><i class="icon-home"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                About Us
+              </li>
+            </ol>
+          </div>
+          <!-- End .container -->
+        </nav>
+
+        <div class="about-section">
+          <div class="container">
+            <h2 class="subtitle">OUR STORY</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book.
+            </p>
+
+            <p class="lead">
+              “ Many desktop publishing packages and web page editors now use
+              Lorem Ipsum as their default model search for evolved over
+              sometimes by accident, sometimes on purpose ”
+            </p>
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .about-section -->
+
+        <div class="features-section bg-gray">
+          <div class="container">
+            <h2 class="subtitle">WHY CHOOSE US</h2>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="feature-box bg-white">
+                  <i class="icon-shipped"></i>
+
+                  <div class="feature-box-content p-0">
+                    <h3>Free Shipping</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industr.
+                    </p>
+                  </div>
+                  <!-- End .feature-box-content -->
+                </div>
+                <!-- End .feature-box -->
+              </div>
+              <!-- End .col-lg-4 -->
+
+              <div class="col-lg-4">
+                <div class="feature-box bg-white">
+                  <i class="icon-us-dollar"></i>
+
+                  <div class="feature-box-content p-0">
+                    <h3>100% Money Back Guarantee</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industr.
+                    </p>
+                  </div>
+                  <!-- End .feature-box-content -->
+                </div>
+                <!-- End .feature-box -->
+              </div>
+              <!-- End .col-lg-4 -->
+
+              <div class="col-lg-4">
+                <div class="feature-box bg-white">
+                  <i class="icon-online-support"></i>
+
+                  <div class="feature-box-content p-0">
+                    <h3>Online Support 24/7</h3>
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industr.
+                    </p>
+                  </div>
+                  <!-- End .feature-box-content -->
+                </div>
+                <!-- End .feature-box -->
+              </div>
+              <!-- End .col-lg-4 -->
+            </div>
+            <!-- End .row -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .features-section -->
+
+        <!-- End .counters-section -->
       </main>
       <!-- End .main -->
 
@@ -372,27 +441,6 @@
                       >
                     </li>
                   </ul>
-                  <div class="social-icons">
-                    <a
-                      href="#"
-                      class="social-icon social-facebook icon-facebook"
-                      target="_blank"
-                      title="Facebook"
-                    ></a>
-                    <a
-                      href="#"
-                      class="social-icon social-twitter icon-twitter"
-                      target="_blank"
-                      title="Twitter"
-                    ></a>
-                    <a
-                      href="#"
-                      class="social-icon social-instagram icon-instagram"
-                      target="_blank"
-                      title="Instagram"
-                    ></a>
-                  </div>
-                  <!-- End .social-icons -->
                 </div>
                 <!-- End .widget -->
               </div>
