@@ -1122,19 +1122,39 @@
                 this.classList.remove("gutter-lg");
             },
             o = {
+              // ".home-slider": {
+              //   lazyLoad: !1,
+              //   autoplay: !1,
+              //   dots: !1,
+              //   nav: !0,
+              //   autoplayTimeout: 12e3,
+              //   animateOut: "fadeOut",
+              //   navText: [
+              //     '<i class="icon-left-open-big">',
+              //     '<i class="icon-right-open-big">',
+              //   ],
+              //   loop: !0,
+              // },
+
               ".home-slider": {
-                lazyLoad: !1,
-                autoplay: !1,
-                dots: !1,
-                nav: !0,
-                autoplayTimeout: 12e3,
+                lazyLoad: false,
+                autoplay: true, // ✅ enable autoplay
+                autoplayHoverPause: true, // (optional) pause on hover
+
+                autoplayHoverPause: true,
+                smartSpeed: 600,
+
+                dots: false,
+                nav: true,
+                autoplayTimeout: 3000,
                 animateOut: "fadeOut",
                 navText: [
                   '<i class="icon-left-open-big">',
                   '<i class="icon-right-open-big">',
                 ],
-                loop: !0,
+                loop: true,
               },
+
               ".testimonials-carousel": {
                 lazyLoad: !1,
                 autoHeight: !0,
@@ -2506,69 +2526,78 @@
       });
   })(jQuery);
 
-
-
-
 /* --- PRODUCTS-SLIDER IMAGE MISSING FIX (appended) ---
    Ensures Owl Carousel refreshes after images load and prevents
    'appear-animate' from hiding cloned/active slides' images.
    Safe: does not remove animations globally, only forces visible
    state inside the .products-slider carousel and refreshes when needed.
 ----------------------------------------------------- */
-(function($){
-  'use strict';
+(function ($) {
+  "use strict";
 
-  $(function(){
-    var $slider = $('.products-slider');
+  $(function () {
+    var $slider = $(".products-slider");
     if (!$slider.length) return;
 
-    function unhideAppear($el){
-      $el.find('.appear-animate').each(function(){
+    function unhideAppear($el) {
+      $el.find(".appear-animate").each(function () {
         var $this = $(this);
         // mark as visible so CSS animations won't keep it hidden
-        $this.removeClass('appear-animate').addClass('appear-animation-visible');
+        $this
+          .removeClass("appear-animate")
+          .addClass("appear-animation-visible");
       });
     }
 
     // Refresh carousel after images are loaded to ensure cloned items have loaded images
     if ($.fn.imagesLoaded) {
-      $slider.imagesLoaded().always(function(){
-        try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+      $slider.imagesLoaded().always(function () {
+        try {
+          $slider.trigger("refresh.owl.carousel");
+        } catch (e) {}
         unhideAppear($slider);
       });
     } else {
       // fallback: on window load
-      $(window).on('load', function(){
-        try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+      $(window).on("load", function () {
+        try {
+          $slider.trigger("refresh.owl.carousel");
+        } catch (e) {}
         unhideAppear($slider);
       });
     }
 
     // When carousel initializes or finishes a translation, ensure appear elements inside are visible
-    $slider.on('initialized.owl.carousel translated.owl.carousel initialize.owl.carousel', function(){
-      unhideAppear($(this));
-    });
+    $slider.on(
+      "initialized.owl.carousel translated.owl.carousel initialize.owl.carousel",
+      function () {
+        unhideAppear($(this));
+      }
+    );
 
     // On translate ensure active images are loaded; if not, reassign src to trigger load
-    $slider.on('translated.owl.carousel', function(){
-      $(this).find('.owl-item.active img').each(function(){
-        if (!this.complete || this.naturalWidth === 0) {
-          var $img = $(this);
-          var src = $img.attr('src');
-          if (src) {
-            // add cache buster to force reload if browser treated it as broken clone
-            var sep = src.indexOf('?') === -1 ? '?' : '&';
-            $img.attr('src', src + sep + '_=' + Date.now());
+    $slider.on("translated.owl.carousel", function () {
+      $(this)
+        .find(".owl-item.active img")
+        .each(function () {
+          if (!this.complete || this.naturalWidth === 0) {
+            var $img = $(this);
+            var src = $img.attr("src");
+            if (src) {
+              // add cache buster to force reload if browser treated it as broken clone
+              var sep = src.indexOf("?") === -1 ? "?" : "&";
+              $img.attr("src", src + sep + "_=" + Date.now());
+            }
           }
-        }
-      });
+        });
     });
 
     // Extra safety: when window resizes refresh the carousel (helps layout issues)
-    $(window).on('resize', function(){
-      try { $slider.trigger('refresh.owl.carousel'); } catch(e){}
+    $(window).on("resize", function () {
+      try {
+        $slider.trigger("refresh.owl.carousel");
+      } catch (e) {}
     });
-
   });
 })(jQuery);
 /* --- end appended fix --- */
