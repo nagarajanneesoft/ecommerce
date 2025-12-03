@@ -4555,15 +4555,42 @@ label {
     margin-bottom: 5rem;
   }
 }
+
+.car-box {
+  display: flex;
+  align-items: center;
+  color: #222529;
+  gap: 2rem;
+  margin: 0 1rem 0 0;
+}
+.car-box i {
+  color: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.car-box i:before {
+  width: auto;
+  margin: 0 0.1em;
+}
+.car-box h4 {
+  color: inherit;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
 .info-box {
   display: flex;
   align-items: center;
   width: 100%;
   color: #222529;
+  gap: 1rem;
 }
 .info-box i {
   color: inherit;
-  font-size: 3.7rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .info-box i:before {
@@ -14607,3 +14634,19 @@ section {
   align-items: center;
 }
 /* Event End */
+
+/* Car Start */
+.cta-border {
+  border: 1px solid #dfdfdf;
+  border-radius: 1rem;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.testimonial-owner figure {
+  margin-right: 12px !important;
+}
+/* Car End */
