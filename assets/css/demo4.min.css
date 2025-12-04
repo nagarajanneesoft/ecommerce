@@ -14649,4 +14649,7 @@ section {
 .testimonial-owner figure {
   margin-right: 12px !important;
 }
+.gap-2 {
+  gap: 1rem;
+}
 /* Car End */

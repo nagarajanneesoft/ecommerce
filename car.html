@@ -402,18 +402,39 @@
                 <br />
                 <div class="cta-simple cta-border">
                   <div class="">
-                    <div class="testimonial-owner">
-                      <figure class="max-width-none">
+                    <div class="d-flex align-items-center">
+                      <!-- Profile Image -->
+                      <div class="position-relative mr-3">
                         <img
                           src="assets/images/elements/testimonial/client1.png"
+                          class="rounded-circle border border-danger"
                           width="62"
                           height="62"
                           alt="client"
                         />
-                      </figure>
+
+                        <!-- Verified Badge -->
+                        <span
+                          class="badge badge-warning position-absolute"
+                          style="
+                            /* bottom: -5px; */
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 10px;
+                            padding: 3px 6px;
+                            border-radius: 12px;
+                          "
+                        >
+                          ✔ Verified
+                        </span>
+                      </div>
+
+                      <!-- Text Section -->
                       <div class="text-left">
-                        <strong class="testimonial-title">John Smith</strong>
-                        <span>CEO &amp; Founder - Okler</span>
+                        <strong class="d-block">Formula Motors</strong>
+                        <small class="text-muted d-block"
+                          >Member since Sep 2014</small
+                        >
                       </div>
                     </div>
 
@@ -431,7 +452,7 @@
                       Chat With Seller
                     </button>
                     <div
-                      class="d-flex align-items-center justify-content-center mt-1"
+                      class="d-flex align-items-center justify-content-center mt-1 gap-2"
                     >
                       <span><i class="icon-phone"></i> ***** *****</span>
                       <span>
