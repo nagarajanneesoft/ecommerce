@@ -14655,8 +14655,8 @@ section {
 .service-rating .product-ratings .ratings {
   font-size: 35px;
 }
-.service_rating .product-ratings,
+/* .service_rating .product-ratings,
 .ratings-container .ratings {
   font-size: 30px;
-}
+} */
 /* Car End */
