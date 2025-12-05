@@ -2724,7 +2724,7 @@ a:focus {
   padding-right: 25px;
   background: transparent;
   font-family: Poppins, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: -0.025em;
   overflow: hidden;
@@ -13281,7 +13281,7 @@ span.toggle:before {
 }
 .post a:focus,
 .post a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .post .read-more {
   float: right;
@@ -14651,5 +14651,12 @@ section {
 }
 .gap-2 {
   gap: 1rem;
+}
+.service-rating .product-ratings .ratings {
+  font-size: 35px;
+}
+.service_rating .product-ratings,
+.ratings-container .ratings {
+  font-size: 30px;
 }
 /* Car End */
