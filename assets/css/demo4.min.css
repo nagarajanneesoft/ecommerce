@@ -14655,6 +14655,18 @@ section {
 .service-rating .product-ratings .ratings {
   font-size: 35px;
 }
+.heading-middle-border {
+    display: flex;
+    align-items: center;
+}
+.heading-middle-border.right:before {
+    margin-right: 1rem;
+}
+.heading-middle-border.left:after, .heading-middle-border.right:before {
+    content: "";
+    border-top: 1px solid #dbdbdb;
+    flex: 1;
+}
 /* .service_rating .product-ratings,
 .ratings-container .ratings {
   font-size: 30px;

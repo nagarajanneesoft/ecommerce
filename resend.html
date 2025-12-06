@@ -149,7 +149,7 @@
                   <li><a href="#">Marketplace</a></li>
                   <li><a href="#">Business</a></li>
                   <li><a href="#">Sales</a></li>
-                  <li><a href="#">Services</a></li>
+                  <li><a href="service.html">Services</a></li>
                   <li><a href="event.html">Events</a></li>
                   <li><a href="car.html">Cars</a></li>
                 </ul>
@@ -192,44 +192,119 @@
       </header>
       <!-- End .header -->
 
-      <main class="main about">
-        <nav aria-label="breadcrumb" class="breadcrumb-nav">
-          <div class="container">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item">
-                <a href="index.html"><i class="icon-home"></i></a>
-              </li>
-              <li class="breadcrumb-item active" aria-current="page">
-                Terms & Conditions
-              </li>
-            </ol>
-          </div>
-          <!-- End .container -->
-        </nav>
+      <main class="main">
+        <!-- <div class="page-header">
+          <div class="container d-flex flex-column align-items-center">
+            <nav aria-label="breadcrumb" class="breadcrumb-nav">
+              <div class="container">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-        <div class="about-section">
-          <div class="container">
-            <h2 class="subtitle">Terms & Conditions</h2>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged.
-            </p>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Login
+                  </li>
+                </ol>
+              </div>
+            </nav>
+
+            <h1>Login</h1>
           </div>
-          <!-- End .container -->
+        </div> -->
+
+        <div class="container reset-password-container">
+          <div class="login-card">
+            <div class="row justify-content-center">
+              <!-- left: blue panel -->
+              <div class="col-sm-3 bg-primary">
+                <div class="p-5">
+                  <h4 class="text-white">Authentication required</h4>
+                  <p class="text-white">
+                    Get access to your Orders, Wishlist and Recommendations
+                  </p>
+                </div>
+              </div>
+
+              <!-- right: merged feature-box + your form -->
+              <div class="col-sm-5">
+                <div class="container-fluid">
+                  <div class="">
+                    <!-- use col-lg-3 and col-lg-6 layout like your snippet; adjust for centering -->
+                    <div class="">
+                      <div
+                        class="feature-box border-top-primary"
+                        style="margin-bottom: 0px"
+                      >
+                        <div class="feature-box-content">
+                          <form class="mb-0" id="loginForm">
+                            <div class="form-group mb-3">
+                              <div class="d-flex justify-content-between">
+                                <label
+                                  for="reset-email"
+                                  class="font-weight-normal"
+                                  >Enter OTP
+                                </label>
+                              </div>
+
+                              <input
+                                type="email"
+                                class="form-control"
+                                id="reset-email"
+                                name="reset-email"
+                                placeholder="Password"
+                                required
+                              />
+                            </div>
+
+                            <div class="form-footer mb-0">
+                              <button
+                                type="submit"
+                                class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
+                                id="requestOtpBtn"
+                              >
+                                Continue
+                              </button>
+                            </div>
+
+                            <span class="font-weight-normal text-center mt-2"
+                              ><a href="#">Resend OTP</a></span
+                            >
+
+                            <h6 class="heading-middle-border left right mt-2">
+                              OR
+                            </h6>
+
+                            <div class="form-footer mb-0">
+                              <div class="">
+                                <button
+                                  type="submit"
+                                  class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
+                                  id="requestOtpBtn"
+                                >
+                                  Send OTP to WhatsApp
+                                </button>
+                                <button
+                                  type="submit"
+                                  class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal mt-2 text-transform-none mr-0"
+                                  id="requestOtpBtn"
+                                >
+                                  Sign in with your password
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- feature-box-content -->
+                      </div>
+                      <!-- feature-box -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- login-row -->
+          </div>
+          <!-- login-card -->
         </div>
-        <!-- End .about-section -->
-
-        <!-- End .counters-section -->
       </main>
       <!-- End .main -->
 
