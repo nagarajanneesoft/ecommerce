@@ -14685,3 +14685,8 @@ h6.heading-bottom-border {
   border-top: solid #dbdbdb;
   padding-top: 1rem;
 }
+
+.home-slide .car_bg_slider {
+  min-height: 300px;
+  height: 300px;
+}
