@@ -2700,7 +2700,7 @@ a:focus {
   text-transform: capitalize;
 }
 .card-body {
-  min-height: 135px;
+  /* min-height: 135px; */
   padding: 2rem 1.5rem;
   border-top: 0;
   border-radius: 0;
