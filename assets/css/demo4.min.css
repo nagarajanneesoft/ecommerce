@@ -14671,3 +14671,17 @@ section {
   font-size: 30px;
 } */
 /* Car End */
+
+h4.heading-bottom-border,
+h5.heading-bottom-border,
+h6.heading-bottom-border {
+  border-bottom-width: 1px;
+}
+.heading-bottom-border {
+  border-bottom: solid #dbdbdb;
+  padding-bottom: 1rem;
+}
+.heading-top-border {
+  border-top: solid #dbdbdb;
+  padding-top: 1rem;
+}
