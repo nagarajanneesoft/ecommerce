@@ -12508,9 +12508,9 @@ main .sticky-header .product-ratings:before {
 .sidebar-shop .widget-title a.collapsed:after {
   transform: rotate(-90deg);
 }
-.sidebar-shop .widget-body {
+/* .sidebar-shop .widget-body {
   padding: 1.5rem 0 0.7rem;
-}
+} */
 .sidebar-shop .widget-featured {
   position: relative;
   padding-bottom: 0.5rem;
@@ -14704,4 +14704,44 @@ h6.heading-bottom-border {
 }
 .event-box.order-summary span {
   font-size: 1.3rem;
+}
+.brand_logo img {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0.3rem;
+}
+.cat-list li {
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.price-slider-wrapper {
+  padding: 1.5rem 0.4rem 0.5rem 0.6rem;
+}
+
+.filter-price-action {
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.filter-price-action .btn {
+  padding: 5px 1.5rem 6px 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.filter-price-action .filter-price-text {
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.choose_border {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
 }
