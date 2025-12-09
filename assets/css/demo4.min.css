@@ -14778,3 +14778,9 @@ h6.heading-bottom-border {
   max-width: 10rem;
   margin-top: 1rem;
 }
+.market_navbar_sort {
+  padding: 1rem 0;
+}
+.market_navbar_sort li a {
+  cursor: pointer;
+}
