@@ -14784,3 +14784,26 @@ h6.heading-bottom-border {
 .market_navbar_sort li a {
   cursor: pointer;
 }
+
+.right_side_sticky {
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+}
+
+.thumb-info-image,
+.thumb-item i {
+  display: block;
+  position: relative;
+  margin-bottom: 0.9rem;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 125px;
+  height: 125px;
+}
+.main-nav .menu > li > a {
+  text-align: center;
+}
