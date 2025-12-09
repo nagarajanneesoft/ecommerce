@@ -3612,6 +3612,11 @@ a:focus {
 .flag.flag-zw {
   background-position: -208px -165px;
 }
+
+.fs-6 {
+  font-size: 1rem !important;
+}
+
 @font-face {
   font-family: "porto";
   src: url("../fonts/porto.eot?64334846");
@@ -4584,7 +4589,20 @@ label {
   text-transform: uppercase;
   line-height: 1.1;
 }
-
+.marketplace-box .post-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem !important;
+}
+.rating-link-count {
+  font-size: 1.2rem;
+  color: gray;
+}
+.text-bg-success {
+  background: green;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1.2rem !important;
+}
 .info-box {
   display: flex;
   align-items: center;
@@ -14747,4 +14765,16 @@ h6.heading-bottom-border {
 }
 .btn {
   font-weight: 400 !important;
+}
+.price_flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.price_flex .one,
+.price_flex .two {
+  width: 100%;
+  max-width: 10rem;
+  margin-top: 1rem;
 }
