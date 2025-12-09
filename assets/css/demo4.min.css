@@ -10177,6 +10177,13 @@ header .separator {
 .menu .megamenu.megamenu-3cols {
   width: 600px;
 }
+
+@media (max-width: 992px) {
+  .menu .megamenu.megamenu-3cols {
+    width: 300px !important;
+    left: -75px !important;
+  }
+}
 .menu .megamenu .row > div {
   padding-top: 1.5rem;
 }
@@ -14804,6 +14811,7 @@ h6.heading-bottom-border {
   width: 125px;
   height: 125px;
 }
-.main-nav .menu > li > a {
+.main-navw .menu > li > a {
   text-align: center;
+  cursor: pointer;
 }
