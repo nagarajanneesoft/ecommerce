@@ -14680,6 +14680,9 @@ section {
 .gap-2 {
   gap: 1rem;
 }
+.gap-3 {
+  gap: 1.5rem;
+}
 .service-rating .product-ratings .ratings {
   font-size: 35px;
 }
@@ -14814,4 +14817,49 @@ h6.heading-bottom-border {
 .main-navw .menu > li > a {
   text-align: center;
   cursor: pointer;
+}
+.product_brand_detail {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: unset;
+  width: 100%;
+}
+
+.product_brand_logo {
+  width: 25px;
+  height: 25px;
+}
+.product_title_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.product_title_head h5 {
+  margin: 0;
+  padding: 0;
+  color: #222529;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.check_available_user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.product-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .product-action {
+    display: block;
+  }
 }

@@ -204,13 +204,6 @@
           </nav>
 
           <div class="product-single-container product-single-default">
-            <div class="cart-message d-none">
-              <strong class="single-cart-notice"
-                >“Men Black Sports Shoes”</strong
-              >
-              <span>has been added to your cart.</span>
-            </div>
-
             <div class="row">
               <div class="col-lg-5 col-md-6 product-single-gallery">
                 <div class="product-slider-container">
@@ -331,7 +324,16 @@
               <!-- End .product-single-gallery -->
 
               <div class="col-lg-7 col-md-6 product-single-details">
-                <h1 class="product-title">Men Black Sports Shoes</h1>
+                <div class="product_title_head">
+                  <span><h5 class="">Men Black Sports Shoes</h5></span>
+                  <span
+                    ><span
+                      ><img
+                        src="assets/images/user.svg"
+                        class="img-fluid product_brand_logo"
+                        alt="" /></span
+                  ></span>
+                </div>
 
                 <div class="ratings-container">
                   <div class="product-ratings">
@@ -421,22 +423,41 @@
                 </div>
 
                 <div class="product-action">
-                  <div class="product-single-qty">
-                    <input
-                      class="horizontal-quantity form-control"
-                      type="text"
-                    />
+                  <div class="main_one">
+                    <div class="product-single-qty">
+                      <input
+                        class="horizontal-quantity form-control"
+                        type="text"
+                      />
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow-none mr-2"
+                      title="Add to Cart"
+                      >Add to Cart</a
+                    >
+                    <a href="#" class="btn btn-primary shadow-none">Buy Now</a>
                   </div>
-                  <!-- End .product-single-qty -->
-
-                  <a
-                    href="#"
-                    class="btn btn-primary shadow-none mr-2"
-                    title="Add to Cart"
-                    >Add to Cart</a
-                  >
-
-                  <a href="#" class="btn btn-primary shadow-none">Buy Now</a>
+                  <div class="main_two">
+                    <div class="check_available_user gap-3">
+                      <span class="d-flex gap-2 align-items-center">
+                        <img
+                          src="assets/images/nike_logo.png"
+                          class="img-fluid product_brand_logo"
+                          alt=""
+                        />
+                        <p class="p-0 m-0">Username</p>
+                      </span>
+                      <span>
+                        <i
+                          class="fab fa-rocketchat"
+                          aria-hidden="true"
+                          style="color: var(--primary-color); cursor: pointer"
+                        ></i>
+                        Check Availablity
+                      </span>
+                    </div>
+                  </div>
                 </div>
                 <!-- End .product-action -->
 
