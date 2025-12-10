@@ -14865,7 +14865,11 @@ h6.heading-bottom-border {
 }
 
 /* sERVICES PAGE START */
-
+.text-bg-secondary
+{
+    color: #fff !important;
+    background: gray;
+}
 .service_page_section {
   display: flex;
   justify-content: center;
