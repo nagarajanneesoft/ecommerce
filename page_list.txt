@@ -1,0 +1,17 @@
+https://nagarajanneesoft.github.io/ecommerce/login.html
+https://nagarajanneesoft.github.io/ecommerce/otp.html
+https://nagarajanneesoft.github.io/ecommerce/resend.html
+https://nagarajanneesoft.github.io/ecommerce/index.html
+https://nagarajanneesoft.github.io/ecommerce/product.html
+https://nagarajanneesoft.github.io/ecommerce/marketplace.html
+https://nagarajanneesoft.github.io/ecommerce/event.html
+https://nagarajanneesoft.github.io/ecommerce/event_details.html
+https://nagarajanneesoft.github.io/ecommerce/sales.html
+https://nagarajanneesoft.github.io/ecommerce/car.html
+https://nagarajanneesoft.github.io/ecommerce/car_details.html
+https://nagarajanneesoft.github.io/ecommerce/service.html
+https://nagarajanneesoft.github.io/ecommerce/service_list.html
+https://nagarajanneesoft.github.io/ecommerce/service_details.html
+https://nagarajanneesoft.github.io/ecommerce/about.html
+https://nagarajanneesoft.github.io/ecommerce/terms.html
+https://nagarajanneesoft.github.io/ecommerce/policy.html
