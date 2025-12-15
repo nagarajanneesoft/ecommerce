@@ -257,13 +257,13 @@
                   </div>
                   <a
                     href="profile.html"
-                    class="list-group-item list-group-item-action border-0 active-custom"
+                    class="list-group-item list-group-item-action border-0"
                   >
                     Profile Information
                   </a>
                   <a
                     href="address.html"
-                    class="list-group-item list-group-item-action border-0"
+                    class="list-group-item list-group-item-action border-0 active-custom"
                   >
                     Manage Addresses
                   </a>
@@ -327,48 +327,202 @@
               </div>
               <div class="col-sm-9" style="padding: 0rem 2rem">
                 <div class="wishlist-title">
-                  <h5 class="p-2">My Profile</h5>
+                  <h5 class="p-2">My Address</h5>
                 </div>
 
-                <div class="account-content">
-                  <form action="#">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="acc-name"
-                            >First name <span class="required">*</span></label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Editor"
-                            id="acc-name"
-                            name="acc-name"
-                            required=""
-                          />
-                        </div>
-                      </div>
+                <!-- Manage Address Start -->
+                <div class="container mt-3">
+                  <!-- ADD NEW ADDRESS -->
+                  <div class="card border mb-4 add-address-card">
+                    <div class="card-body py-3">
+                      <a href="#" class="text-primary font-weight-bold">
+                        <span class="mr-2" style="font-size: 18px">+</span>
+                        ADD A NEW ADDRESS
+                      </a>
+                    </div>
+                  </div>
 
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="acc-lastname"
-                            >Last name <span class="required">*</span></label
+                  <!-- ADDRESS CARD -->
+                  <div class="card border mb-3 address-card">
+                    <div class="card-body py-3">
+                      <div class="d-flex justify-content-between">
+                        <!-- LEFT CONTENT -->
+                        <div>
+                          <span
+                            class="badge badge-success px-3 py-1 font-weight-bold mb-2"
+                            >HOME</span
                           >
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="acc-lastname"
-                            name="acc-lastname"
-                            required=""
-                          />
+
+                          <p class="mb-1 font-weight-bold">John R</p>
+                          <p class="text-muted small mb-1">
+                            12/45 ABC Street, Gandhi Nagar,<br />
+                            Chennai - 600001, Tamil Nadu
+                          </p>
+                          <p class="text-muted small mb-0">
+                            Mobile: <strong>9876543210</strong>
+                          </p>
+                        </div>
+
+                        <!-- 3 DOT MENU -->
+                        <div class="text-right">
+                          <div class="dropdown">
+                            <button
+                              class="btn p-0 border-0 bg-transparent"
+                              data-toggle="dropdown"
+                            >
+                              <span class="three-dots">⋮</span>
+                            </button>
+
+                            <div
+                              class="dropdown-menu dropdown-menu-right custom-menu"
+                            >
+                              <a class="dropdown-item text-primary" href="#"
+                                >Edit</a
+                              >
+                              <a class="dropdown-item text-dark" href="#"
+                                >Delete</a
+                              >
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="card border mb-3 address-card">
+                    <div class="card-body py-3">
+                      <div class="d-flex justify-content-between">
+                        <!-- LEFT CONTENT -->
+                        <div>
+                          <span
+                            class="badge badge-primary px-3 py-1 font-weight-bold mb-2"
+                            >HOME</span
+                          >
+
+                          <p class="mb-1 font-weight-bold">John R</p>
+                          <p class="text-muted small mb-1">
+                            12/45 ABC Street, Gandhi Nagar,<br />
+                            Chennai - 600001, Tamil Nadu
+                          </p>
+                          <p class="text-muted small mb-0">
+                            Mobile: <strong>9876543210</strong>
+                          </p>
+                        </div>
+
+                        <!-- 3 DOT MENU -->
+                        <div class="text-right">
+                          <div class="dropdown">
+                            <button
+                              class="btn p-0 border-0 bg-transparent"
+                              data-toggle="dropdown"
+                            >
+                              <span class="three-dots">⋮</span>
+                            </button>
+
+                            <div
+                              class="dropdown-menu dropdown-menu-right custom-menu"
+                            >
+                              <a class="dropdown-item text-primary" href="#"
+                                >Edit</a
+                              >
+                              <a class="dropdown-item text-dark" href="#"
+                                >Delete</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Manage Address End -->
+
+                <div class="account-content">
+                  <form class="mb-2" action="#">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label
+                            >First name <span class="required">*</span></label
+                          >
+                          <input type="text" class="form-control" required="" />
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label
+                            >Last name <span class="required">*</span></label
+                          >
+                          <input type="text" class="form-control" required="" />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Company </label>
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="select-custom">
+                      <label
+                        >Country / Region <span class="required">*</span></label
+                      >
+                      <select name="orderby" class="form-control">
+                        <option value="" selected="selected">
+                          British Indian Ocean Territory
+                        </option>
+                        <option value="1">Brunei</option>
+                        <option value="2">Bulgaria</option>
+                        <option value="3">Burkina Faso</option>
+                        <option value="4">Burundi</option>
+                        <option value="5">Cameroon</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label
+                        >Street address <span class="required">*</span></label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="House number and street name"
+                        required=""
+                      />
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Apartment, suite, unit, etc. (optional)"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Town / City <span class="required">*</span></label>
+                      <input type="text" class="form-control" required="" />
+                    </div>
+
+                    <div class="form-group">
+                      <label
+                        >State / Country <span class="required">*</span></label
+                      >
+                      <input type="text" class="form-control" required="" />
+                    </div>
+
+                    <div class="form-group">
+                      <label
+                        >Postcode / ZIP <span class="required">*</span></label
+                      >
+                      <input type="text" class="form-control" required="" />
+                    </div>
+
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label for="acc-name"
-                            >Gender <span class="required">*</span></label
+                            >Address Type
+
+                            <span class="required">*</span></label
                           >
                           <div class="row">
                             <div class="col-sm-2">
@@ -381,7 +535,7 @@
                                     checked=""
                                   />
                                   <label class="custom-control-label"
-                                    >Male</label
+                                    >Home</label
                                   >
                                 </div>
                                 <!-- End .custom-checkbox -->
@@ -397,7 +551,7 @@
                                     checked=""
                                   />
                                   <label class="custom-control-label"
-                                    >Female</label
+                                    >Office</label
                                   >
                                 </div>
                                 <!-- End .custom-checkbox -->
@@ -407,102 +561,13 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="acc-name"
-                            >Mobile Number
-                            <span class="required">*</span></label
-                          >
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Editor"
-                            id="acc-name"
-                            name="acc-name"
-                            required=""
-                          />
-                        </div>
-                      </div>
 
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="acc-lastname"
-                            >Email Address
-                            <span class="required">*</span></label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="acc-email"
-                            name="acc-email"
-                            placeholder="editor@gmail.com"
-                            required=""
-                          />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-footer mt-2 mb-0">
+                    <div class="form-footer m-0 p-0">
                       <button
                         type="submit"
-                        class="btn btn-dark btn-rounded mr-0 btn-md"
+                        class="btn btn-dark btn-rounded btn-md"
                       >
                         Save changes
-                      </button>
-                    </div>
-                    <div class="faq-section">
-                      <h5 class="pt-5">FAQ's</h5>
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <h6>
-                            What happens when I update my email address (or
-                            mobile number)?
-                          </h6>
-                          <p>
-                            Your login email id (or mobile number) changes,
-                            likewise. You'll receive all your account related
-                            communication on your updated email address (or
-                            mobile number).
-                          </p>
-                          <h6>
-                            What happens when I update my email address (or
-                            mobile number)?
-                          </h6>
-                          <p>
-                            Your login email id (or mobile number) changes,
-                            likewise. You'll receive all your account related
-                            communication on your updated email address (or
-                            mobile number).
-                          </p>
-                          <h6>
-                            What happens when I update my email address (or
-                            mobile number)?
-                          </h6>
-                          <p>
-                            Your login email id (or mobile number) changes,
-                            likewise. You'll receive all your account related
-                            communication on your updated email address (or
-                            mobile number).
-                          </p>
-                          <h6>
-                            What happens when I update my email address (or
-                            mobile number)?
-                          </h6>
-                          <p>
-                            Your login email id (or mobile number) changes,
-                            likewise. You'll receive all your account related
-                            communication on your updated email address (or
-                            mobile number).
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right mt-2">
-                      <button class="btn btn-primary btn-rounded btn-md">
-                        <span>Deactivate Account</span>
-                      </button>
-                      <button class="btn btn-danger btn-rounded btn-md">
-                        Delete Account
                       </button>
                     </div>
                   </form>

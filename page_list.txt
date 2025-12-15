@@ -18,3 +18,11 @@ https://nagarajanneesoft.github.io/ecommerce/about.html
 https://nagarajanneesoft.github.io/ecommerce/terms.html
 https://nagarajanneesoft.github.io/ecommerce/policy.html
 
+
+
+
+https://nagarajanneesoft.github.io/ecommerce/dashboard.html
+https://nagarajanneesoft.github.io/ecommerce/orders.html
+https://nagarajanneesoft.github.io/ecommerce/profile.html
+
+
