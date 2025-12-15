@@ -10759,9 +10759,6 @@ footer .contact-info-label {
   color: #08c;
 }
 @media (max-width: 575px) {
-  footer {
-    margin-bottom: 68px;
-  }
   #scroll-top {
     display: none;
   }
