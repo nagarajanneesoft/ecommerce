@@ -24,5 +24,6 @@ https://nagarajanneesoft.github.io/ecommerce/policy.html
 https://nagarajanneesoft.github.io/ecommerce/dashboard.html
 https://nagarajanneesoft.github.io/ecommerce/orders.html
 https://nagarajanneesoft.github.io/ecommerce/profile.html
+https://nagarajanneesoft.github.io/ecommerce/address.html
 
 
