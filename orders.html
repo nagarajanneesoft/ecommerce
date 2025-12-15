@@ -60,7 +60,9 @@
           <div class="container">
             <div class="header-right header-dropdowns ml-0 ml-sm-auto w-sm-100">
               <div class="header-dropdown">
-                <a href="#"><i class="icon-user-2"></i> Username</a>
+                <a href="dashboard.html"
+                  ><i class="icon-user-2"></i> Username</a
+                >
                 <div class="header-menu">
                   <ul>
                     <li>
@@ -194,95 +196,231 @@
       </header>
       <!-- End .header -->
 
-      <main class="main">
-        <div class="container reset-password-container">
-          <div class="login-card">
-            <div class="row justify-content-center">
-              <!-- left: blue panel -->
-              <div class="col-sm-3 bg-primary">
-                <div class="p-5">
-                  <h4 class="text-white">Sign in</h4>
-                  <p class="text-white">
-                    Get access to your Orders, Wishlist and Recommendations
-                  </p>
+      <main class="main about">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html"><i class="icon-home"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                My Orders
+              </li>
+            </ol>
+          </div>
+          <!-- End .container -->
+        </nav>
+
+        <div class="about-section" id="dashboard-section">
+          <div class="container">
+            <div class="row">
+              <div
+                class="sidebar mobile-sidebar col-sm-3 event-box order-summary sidebar-wrapperr"
+              >
+                <div class="contact-item d-flex align-items-center gap-3 p-3">
+                  <div class="icon mr-3">
+                    <img
+                      src="assets/images/elements/testimonial/client1.png"
+                      class="rounded-circle border border-danger"
+                      width="62"
+                      height="62"
+                      alt="client"
+                    />
+                  </div>
+                  <div>
+                    <small class="text-muted d-block">Hello</small>
+                    <strong>Username</strong>
+                  </div>
+                </div>
+
+                <div class="list-group list-group-flush">
+                  <!-- MY ORDERS -->
+                  <div
+                    class="px-3 border-bottom dashboard_list pt-3 pb-2 text-secondary font-weight-bold large"
+                  >
+                    <i class="fa fa-shopping-bag mr-2 text-primary"></i> MY
+                    ORDERS
+                  </div>
+                  <a
+                    href="orders.html"
+                    class="list-group-item list-group-item-action border-0 active-custom"
+                  >
+                    Orders
+                  </a>
+
+                  <!-- ACCOUNT SETTINGS -->
+                  <div
+                    class="px-3 dashboard_list border-bottom pt-3 pb-2 text-secondary font-weight-bold large"
+                  >
+                    <i class="fa fa-user mr-2 text-primary"></i> ACCOUNT
+                    SETTINGS
+                  </div>
+                  <a
+                    href="profile.html"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    Profile Information
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    Manage Addresses
+                  </a>
+                  <!-- PAYMENTS -->
+                  <div
+                    class="px-3 dashboard_list border-bottom pt-3 pb-2 text-secondary font-weight-bold large"
+                  >
+                    <i class="fa fa-credit-card mr-2 text-primary"></i>
+                    PAYMENTS
+                  </div>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0 d-flex justify-content-between"
+                  >
+                    Gift Cards
+                    <span class="text-success font-weight-bold">₹0</span>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    Saved UPI
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    Transaction History
+                  </a>
+                  <!-- Stuff -->
+                  <div
+                    class="px-3 dashboard_list border-bottom pt-3 pb-2 text-secondary font-weight-bold large"
+                  >
+                    <i class="fa fa-credit-card mr-2 text-primary"></i> My STUFF
+                  </div>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0 d-flex justify-content-between"
+                  >
+                    My Coupons
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    My Reviews & Ratings
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action border-0"
+                  >
+                    All Notifications
+                  </a>
+                  <!-- Stuff -->
+                  <div
+                    class="px-3 dashboard_list border-bottom pt-3 pb-2 text-secondary font-weight-bold large"
+                  >
+                    <i class="fa fa-credit-card mr-2 text-primary"></i> LOGOUT
+                  </div>
                 </div>
               </div>
+              <div class="col-sm-9" style="padding: 0rem 2rem">
+                <div class="wishlist-title">
+                  <h5 class="p-2">My ORDER</h5>
+                </div>
 
-              <!-- right: merged feature-box + your form -->
-              <div class="col-sm-5">
-                <div class="container-fluid">
-                  <div class="">
-                    <!-- use col-lg-3 and col-lg-6 layout like your snippet; adjust for centering -->
-                    <div class="">
-                      <div
-                        class="feature-box border-top-primary"
-                        style="margin-bottom: 0px"
-                      >
-                        <div class="feature-box-content">
-                          <form class="mb-0" id="loginForm">
-                            <p>+91 9876543210 <a href="">Change</a></p>
-                            <div class="form-group mb-3">
-                              <div class="d-flex justify-content-between">
-                                <label
-                                  for="reset-email"
-                                  class="font-weight-normal"
-                                  >Password</label
-                                >
-                                <span class="font-weight-normal"
-                                  ><a href="forgot.html"
-                                    >Forgot password?</a
-                                  ></span
-                                >
-                              </div>
-
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="reset-email"
-                                name="reset-email"
-                                placeholder="Password"
-                              />
-                            </div>
-
-                            <div class="form-footer mb-0">
-                              <button
-                                type="submit"
-                                class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
-                                id="requestOtpBtn"
-                              >
-                                Sign in
-                              </button>
-                            </div>
-
-                            <h6 class="heading-middle-border left right mt-2">
-                              OR
-                            </h6>
-
-                            <div class="form-footer mb-0">
-                              <a href="resend.html" class="w-100"
-                                ><button
-                                  type="submit"
-                                  class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
-                                  id="requestOtpBtn"
-                                >
-                                  Get On OTP on Your Phone
-                                </button></a
-                              >
-                            </div>
-                          </form>
-                        </div>
-                        <!-- feature-box-content -->
+                <div class="card order-card mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <!-- Product Image -->
+                      <div class="col-md-2 col-3">
+                        <img
+                          src="assets/images/products/product-1.jpg"
+                          class="img-fluid rounded border"
+                        />
                       </div>
-                      <!-- feature-box -->
+
+                      <!-- Product Details -->
+                      <div class="col-md-6 col-9">
+                        <h6 class="font-weight-bold mb-1">
+                          GLOBAL NOMAD Back Cover for POCO C61
+                        </h6>
+                        <p class="text-muted small mb-2">Color: Brown</p>
+                      </div>
+
+                      <!-- Price & Delivery -->
+                      <div
+                        class="col-md-4 text-md-right text-left mt-2 mt-md-0"
+                      >
+                        <h6 class="font-weight-bold mb-2">₹260</h6>
+
+                        <p class="mb-1">
+                          <span class="status-dot"></span>
+                          <span class="font-weight-bold"
+                            >Delivered on Nov 18</span
+                          >
+                        </p>
+
+                        <p class="text-muted small mb-2">
+                          Your item has been delivered
+                        </p>
+
+                        <a href="#" class="text-primary font-weight-bold small">
+                          ★ Rate & Review Product
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Another Order Item -->
+                <div class="card order-card mb-3">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-2 col-3">
+                        <img
+                          src="assets/images/products/product-1.jpg"
+                          class="img-fluid rounded border"
+                        />
+                      </div>
+
+                      <div class="col-md-6 col-9">
+                        <h6 class="font-weight-bold mb-1">
+                          HP USB FLASH DRIVE 128GB PENDRIVE 2IN1
+                        </h6>
+                        <p class="text-muted small mb-2">Color: Silver</p>
+                      </div>
+
+                      <div
+                        class="col-md-4 text-md-right text-left mt-2 mt-md-0"
+                      >
+                        <h6 class="font-weight-bold mb-2">₹400</h6>
+
+                        <p class="mb-1">
+                          <span class="status-dot"></span>
+                          <span class="font-weight-bold"
+                            >Delivered on Nov 17</span
+                          >
+                        </p>
+
+                        <p class="text-muted small mb-2">
+                          Your item has been delivered
+                        </p>
+
+                        <a href="#" class="text-primary font-weight-bold small">
+                          ★ Rate & Review Product
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- login-row -->
           </div>
-          <!-- login-card -->
+          <!-- End .container -->
         </div>
+        <!-- End .about-section -->
       </main>
       <!-- End .main -->
 
