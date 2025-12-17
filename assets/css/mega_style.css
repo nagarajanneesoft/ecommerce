@@ -15416,3 +15416,47 @@ h6.heading-bottom-border {
   align-items: center;
   justify-content: center;
 }
+
+.compare-table {
+  background: #f4faff;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.compare-header {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+}
+.compare-table {
+  font-size: 1.3rem;
+  line-height: 30px;
+}
+.highlight-col {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 14px;
+}
+
+.feature-row {
+  padding: 10px 0;
+  border-bottom: 1px solid #e4eef7;
+}
+
+.feature-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.tick {
+  font-size: 20px;
+  color: #000;
+}
+
+.cross {
+  font-size: 22px;
+  color: #000;
+}
