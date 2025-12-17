@@ -103,7 +103,7 @@
                 <div class="header-menu">
                   <ul>
                     <li><a href="#">Cart</a></li>
-                    <li><a href="#">Become a Seller</a></li>
+                    <li><a href="seller.html">Become a Seller</a></li>
                   </ul>
                 </div>
                 <!-- End .header-menu -->
@@ -368,7 +368,7 @@
                   <div class="mb-4">
                     <h5 class="p-2 text-start">SELECTED CATEGORY</h5>
                     <p>
-                      Services / Electronics Repair & Services
+                      Automotive / Car
                       <a href="#" class="text-decoration-underline ml-2"
                         >Change</a
                       >
@@ -380,14 +380,92 @@
                     <h5 class="p-2 text-start">INCLUDE SOME DETAILS</h5>
 
                     <div class="form-group">
-                      <label>Type *</label>
+                      <label>Brand *</label>
                       <select class="form-control">
                         <option>Select type</option>
                       </select>
                     </div>
 
                     <div class="form-group">
-                      <label>Ad title *</label>
+                      <label>Year *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Mention key features"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Fuel *</label>
+                      <div class="widget-body">
+                        <div class="d-flex justify-content-between">
+                          <span>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              CNC & Hybrids
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              Diesel
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              Electric
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              LPG
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Transmissions *</label>
+                      <div class="widget-body">
+                        <div class="d-flex justify-content-between">
+                          <span>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              Automatic
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              Manual
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>KM Drivers *</label>
+                      <textarea
+                        class="form-control"
+                        rows="3"
+                        placeholder="Include condition, features, etc"
+                      ></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label>No of Ownres *</label>
+                      <div class="widget-body">
+                        <div class="d-flex justify-content-between">
+                          <span>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              1 st
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              2 nd
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              3 rd
+                            </button>
+                            <button class="btn btn-outline-dark btn-md mb-1">
+                              4 th
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Ad Title *</label>
                       <input
                         type="text"
                         class="form-control"
@@ -402,6 +480,30 @@
                         rows="5"
                         placeholder="Include condition, features, etc"
                       ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">SET A PRICE</h5>
+
+                    <div class="form-group">
+                      <label>Brand *</label>
+
+                      <div class="input-group mb-3">
+                        <span
+                          class="input-group-text"
+                          id="basic-addon1"
+                          style="width: 50px; justify-content: center"
+                          >$</span
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Username"
+                          aria-label="Username"
+                          aria-describedby="basic-addon1"
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -660,14 +762,40 @@
                   <div class="mb-4">
                     <h5 class="p-2 text-start">REVIEW YOUR DETAILS</h5>
 
-                    <div class="form-group">
-                      <label>Name</label>
-                      <input type="text" class="form-control" value="John" />
-                    </div>
+                    <div
+                      class="contact-item d-flex align-items-center gap-3 p-3"
+                    >
+                      <div class="icon mr-3">
+                        <img
+                          src="assets/images/elements/testimonial/client1.png"
+                          class="rounded-circle border border-danger"
+                          width="62"
+                          height="62"
+                          alt="client"
+                        />
+                      </div>
 
-                    <p>
-                      Your phone number<br /><strong>+91 9943157558</strong>
-                    </p>
+                      <div class="form-group row" style="width: 50%">
+                        <div class="col-sm-12">
+                          <label>Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="John"
+                          />
+                        </div>
+                      </div>
+                      <div class="form-group row" style="width: 50%">
+                        <div class="col-sm-12">
+                          <label>Mobile Number</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="+91 9976543210"
+                          />
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   <!-- SUBMIT BUTTON -->
@@ -854,7 +982,7 @@
               </ul>
             </li>
             <li><a href="#">Cart</a></li>
-            <li><a href="#">Become a Seller</a></li>
+            <li><a href="seller.html">Become a Seller</a></li>
             <li>
               <a href="#">Help</a>
               <ul>

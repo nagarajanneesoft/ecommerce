@@ -158,7 +158,7 @@
                   <li><a href="sales.html">Sales</a></li>
                   <li><a href="service.html">Services</a></li>
                   <li><a href="event.html">Events</a></li>
-                  <li><a href="automotive.html">Automotive</a></li>
+                  <li><a href="car.html">Automotive</a></li>
                 </ul>
               </nav>
             </div>
@@ -199,95 +199,167 @@
       </header>
       <!-- End .header -->
 
-      <main class="main">
-        <div class="container reset-password-container">
-          <div class="login-card">
-            <div class="row justify-content-center">
-              <!-- left: blue panel -->
-              <div class="col-sm-3 bg-primary">
-                <div class="p-5">
-                  <h4 class="text-white">Sign in</h4>
-                  <p class="text-white">
-                    Get access to your Orders, Wishlist and Recommendations
-                  </p>
-                </div>
-              </div>
+      <main class="main about">
+        <nav aria-label="breadcrumb" class="breadcrumb-nav">
+          <div class="container">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="index.html"><i class="icon-home"></i></a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Become a Seller
+              </li>
+            </ol>
+          </div>
+          <!-- End .container -->
+        </nav>
 
-              <!-- right: merged feature-box + your form -->
-              <div class="col-sm-5">
-                <div class="container-fluid">
-                  <div class="">
-                    <!-- use col-lg-3 and col-lg-6 layout like your snippet; adjust for centering -->
-                    <div class="">
-                      <div
-                        class="feature-box border-top-primary"
-                        style="margin-bottom: 0px"
-                      >
-                        <div class="feature-box-content">
-                          <form class="mb-0" id="loginForm">
-                            <p>+91 9876543210 <a href="">Change</a></p>
-                            <div class="form-group mb-3">
-                              <div class="d-flex justify-content-between">
-                                <label
-                                  for="reset-email"
-                                  class="font-weight-normal"
-                                  >Password</label
-                                >
-                                <span class="font-weight-normal"
-                                  ><a href="forgot.html"
-                                    >Forgot password?</a
-                                  ></span
-                                >
-                              </div>
-
-                              <input
-                                type="email"
-                                class="form-control"
-                                id="reset-email"
-                                name="reset-email"
-                                placeholder="Password"
-                              />
-                            </div>
-
-                            <div class="form-footer mb-0">
-                              <button
-                                type="submit"
-                                class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
-                                id="requestOtpBtn"
-                              >
-                                Sign in
-                              </button>
-                            </div>
-
-                            <h6 class="heading-middle-border left right mt-2">
-                              OR
-                            </h6>
-
-                            <div class="form-footer mb-0">
-                              <a href="resend.html" class="w-100"
-                                ><button
-                                  type="submit"
-                                  class="btn btn-md btn-primary w-100 form-footer-right font-weight-normal text-transform-none mr-0"
-                                  id="requestOtpBtn"
-                                >
-                                  Get On OTP on Your Phone
-                                </button></a
-                              >
-                            </div>
-                          </form>
+        <div class="about-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-7">
+                <ul class="checkout-steps">
+                  <li>
+                    <h4 class="step-title">Vendor Registration</h4>
+                    <h6 class="step-title">Account Details</h6>
+                    <form action="#" id="checkout-form">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Email Address
+                              <span class="required" title="required">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
                         </div>
-                        <!-- feature-box-content -->
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Business License
+                              <span class="required" title="required"
+                                >*</span
+                              ></label
+                            >
+                            <input
+                              type="file"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
+                        </div>
                       </div>
-                      <!-- feature-box -->
-                    </div>
-                  </div>
-                </div>
+
+                      <div class="form-group">
+                        <label>Business License Expiry Date</label>
+                        <input type="date" class="form-control" />
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >First Name
+                              <span class="required" title="required">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Last Name
+                              <span class="required" title="required"
+                                >*</span
+                              ></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Company Name
+                              <span class="required" title="required">*</span>
+                            </label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label
+                              >Mobile Number
+                              <span class="required" title="required"
+                                >*</span
+                              ></label
+                            >
+                            <input
+                              type="tel"
+                              class="form-control"
+                              required=""
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="form-group mb-1">
+                        <div class="custom-control custom-checkbox">
+                          <input
+                            type="checkbox"
+                            class="custom-control-input"
+                            id="create-account"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="create-account"
+                          >
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Expedita quod eaque dolor quas illum
+                            aut.</label
+                          >
+                        </div>
+                      </div>
+
+                      <div class="form-group row">
+                        <div class="col-sm-6">
+                          <button
+                            class="btn btn-dark btn-rounded mr-0 w-100 btn-md"
+                            disabled=""
+                          >
+                            Register
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </li>
+                </ul>
               </div>
             </div>
-            <!-- login-row -->
           </div>
-          <!-- login-card -->
         </div>
+        <!-- End .about-section -->
       </main>
       <!-- End .main -->
 
