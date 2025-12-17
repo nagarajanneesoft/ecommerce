@@ -13984,7 +13984,8 @@ section {
   font-size: 2.4rem;
 }
 .home-slider img {
-  min-height: 499px;
+  /* min-height: 499px; */
+  min-height: 250px;
 }
 .home-slider h2 {
   font-size: 3.3125em;

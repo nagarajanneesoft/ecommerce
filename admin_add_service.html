@@ -209,7 +209,7 @@
                 <a href="index.html"><i class="icon-home"></i></a>
               </li>
               <li class="breadcrumb-item active" aria-current="page">
-                Dashboard
+                My Orders
               </li>
             </ol>
           </div>
@@ -220,7 +220,7 @@
           <div class="container">
             <div class="row">
               <div
-                class="sidebar mobile-sidebar2 col-sm-3 event-box order-summary sidebar-wrapperr"
+                class="sidebar col-sm-3 event-box order-summary sidebar-wrapperr"
               >
                 <div class="contact-item d-flex align-items-center gap-3 p-3">
                   <div class="icon mr-3">
@@ -337,7 +337,7 @@
                   </a>
                   <a
                     href="admin_service.html"
-                    class="list-group-item list-group-item-action border-0"
+                    class="list-group-item list-group-item-action border-0 active-custom"
                   >
                     My Services
                   </a>
@@ -348,7 +348,7 @@
                     My Events
                   </a>
                   <a
-                    href="admin_car.html"
+                    href="#"
                     class="list-group-item list-group-item-action border-0"
                   >
                     My Automotive
@@ -362,20 +362,318 @@
                 </div>
               </div>
               <div class="col-sm-9" style="padding: 0rem 2rem">
-                <div class="wishlist-title">
-                  <h5 class="p-2">Dashboard</h5>
-                </div>
-
-                <div
-                  class="row d-flex justify-content-center align-items-center"
-                >
-                  <div class="col-md-6 mt-5">
-                    <img
-                      src="assets/images/dummy.jpg"
-                      class="img-fluid"
-                      style="width: 100%"
-                    />
+                <div class="post-container">
+                  <h5 class="p-2 text-center">POST YOUR AD</h5>
+                  <!-- SELECTED CATEGORY -->
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">SELECTED CATEGORY</h5>
+                    <p>
+                      Services / Electronics Repair & Services
+                      <a href="#" class="text-decoration-underline ml-2"
+                        >Change</a
+                      >
+                    </p>
                   </div>
+
+                  <!-- DETAILS -->
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">INCLUDE SOME DETAILS</h5>
+
+                    <div class="form-group">
+                      <label>Type *</label>
+                      <select class="form-control">
+                        <option>Select type</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label>Ad title *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Mention key features"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <label>Description *</label>
+                      <textarea
+                        class="form-control"
+                        rows="5"
+                        placeholder="Include condition, features, etc"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <!-- PHOTO UPLOAD -->
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">UPLOAD UP TO 12 PHOTOS</h5>
+
+                    <div class="row">
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2 mb-2 col-md-">
+                        <div
+                          class="upload-box"
+                          onclick="document.getElementById('file1').click()"
+                        >
+                          <input
+                            type="file"
+                            id="file1"
+                            accept="image/*"
+                            style="display: none"
+                            onchange="showPreview(this, 'preview1')"
+                          />
+
+                          <div id="preview1" class="text-center">
+                            <img
+                              src="https://img.icons8.com/ios/50/000000/camera.png"
+                            />
+                            <div class="small mt-1">Add Photo</div>
+                          </div>
+                          <!-- Close Icon -->
+                          <span
+                            id="close1"
+                            class="close-icon"
+                            onclick="removeImage(event, 'preview1', 'close1')"
+                          >
+                            &times;
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mandatory">This field is mandatory</div>
+                  </div>
+
+                  <!-- LOCATION -->
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">CONFIRM YOUR LOCATION</h5>
+                    <div class="tabs">
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="tab-popular"
+                            data-toggle="tab"
+                            href="#popular-content"
+                            role="tab"
+                            aria-controls="popular-content"
+                            aria-selected="true"
+                            >LIST</a
+                          >
+                        </li>
+
+                        <li class="nav-item">
+                          <a
+                            class="nav-link"
+                            id="recent-tab"
+                            data-toggle="tab"
+                            href="#recent-content"
+                            role="tab"
+                            aria-controls="recent-content"
+                            aria-selected="true"
+                            >CURRENT LOCATION</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content">
+                        <div
+                          class="tab-pane fade show active"
+                          id="popular-content"
+                          role="tabpanel"
+                          aria-labelledby="tab-popular"
+                        >
+                          <div class="form-group">
+                            <label>State *</label>
+                            <select class="form-control">
+                              <option>Select state</option>
+                            </select>
+                          </div>
+
+                          <div class="mandatory">This field is mandatory</div>
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="recent-content"
+                          role="tabpanel"
+                          aria-labelledby="recent-tab"
+                        >
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Search"
+                            />
+                          </div>
+
+                          <div class="mandatory">This field is mandatory</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- REVIEW DETAILS -->
+                  <div class="mb-4">
+                    <h5 class="p-2 text-start">REVIEW YOUR DETAILS</h5>
+
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" class="form-control" value="John" />
+                    </div>
+
+                    <p>
+                      Your phone number<br /><strong>+91 9943157558</strong>
+                    </p>
+                  </div>
+
+                  <!-- SUBMIT BUTTON -->
+                  <button class="btn btn-dark btn-rounded mr-0 btn-md" disabled>
+                    Post now
+                  </button>
                 </div>
               </div>
             </div>
@@ -602,5 +900,34 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.updated_new.js"></script>
+    <script>
+      function openFile(id) {
+        document.getElementById(id).click();
+      }
+
+      function showPreview(input, previewId, closeId) {
+        if (input.files && input.files[0]) {
+          let reader = new FileReader();
+
+          reader.onload = function (e) {
+            document.getElementById(
+              previewId
+            ).innerHTML = `<img src="${e.target.result}" class="img-fluid">`;
+            document.getElementById(closeId).classList.remove("d-none");
+          };
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      function removeImage(event, previewId, closeId) {
+        event.stopPropagation(); // Prevent clicking upload box
+        document.getElementById(
+          previewId
+        ).innerHTML = `<img src="https://img.icons8.com/ios/50/000000/camera.png"/>
+     <div class="small mt-1">Add Photo</div>`;
+        document.getElementById(closeId).classList.add("d-none");
+      }
+    </script>
   </body>
 </html>
