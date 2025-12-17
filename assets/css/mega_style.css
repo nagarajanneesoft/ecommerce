@@ -15425,9 +15425,9 @@ h6.heading-bottom-border {
 
 .compare-header {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 .compare-table {
   font-size: 1.3rem;
@@ -15437,11 +15437,11 @@ h6.heading-bottom-border {
   border: 2px solid #007bff;
   border-radius: 10px;
   background: #ffffff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .feature-row {
-  padding: 10px 0;
+  padding: 5px 0;
   border-bottom: 1px solid #e4eef7;
 }
 
