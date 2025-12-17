@@ -23,5 +23,3 @@ https://nagarajanneesoft.github.io/ecommerce/profile.html
 https://nagarajanneesoft.github.io/ecommerce/address.html
 https://nagarajanneesoft.github.io/ecommerce/admin_product.html
 https://nagarajanneesoft.github.io/ecommerce/admin_add_product.html
-
-
