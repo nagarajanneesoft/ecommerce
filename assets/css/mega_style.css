@@ -10075,7 +10075,7 @@ header .separator {
   border: #e7e7e7;
 }
 .header-search-inline .form-control {
-  min-width: 35rem;
+  min-width: 25rem;
   padding: 1rem 2rem;
 }
 @media (min-width: 992px) {
@@ -15459,4 +15459,86 @@ h6.heading-bottom-border {
 .cross {
   font-size: 22px;
   color: #000;
+}
+
+.noti-header_menu {
+  width: 300px;
+}
+.noti-header_menu:before {
+  left: 25% !important;
+}
+.btn-disabled {
+  opacity: 0.65;
+  pointer-events: none;
+}
+.wishlist-product {
+  position: relative;
+}
+.wishlist-product .out_stock_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-weight: 600;
+}
+.noti-header_menu ul {
+  padding: 1rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+.noti-header_menu ul li {
+  border-bottom: 1px solid #e9ecef;
+  margin-bottom: 0.5rem;
+}
+.noti-header_menu ul li .noti h6 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  margin: 0px;
+}
+.noti-header_menu ul li .noti p {
+  font-size: 1rem;
+  color: #938383;
+}
+.noti-header_menu ul li .noti .hour_span {
+  text-align: right;
+  font-size: 1rem;
+  color: #938383;
+}
+
+.config-size-list li a.filter-color {
+  height: 2.8rem;
+  min-width: 2.8rem;
+}
+
+.config-size-list li a {
+  margin: 3px 6px 3px 0;
+  min-width: 3.2rem;
+  height: 2.6rem;
+  border: 1px solid #eee;
+  color: inherit;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  background-color: #fff;
+}
+.config-size-list a {
+  display: block;
+  position: relative;
+  min-width: 32px;
+  text-align: center;
+  margin: 3px 6px 3px 0;
+  padding: 4px 8px;
+  transition: all 0.3s;
+  border: 1px solid #e9e9e9;
+  color: #777;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-decoration: none;
 }

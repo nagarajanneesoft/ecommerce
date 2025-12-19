@@ -1515,7 +1515,7 @@
             });
         },
         scrollBtnAppear: function () {
-          t(window).scrollTop() >= 400
+          t(window).scrollTop() >= 100
             ? t("#scroll-top").addClass("fixed")
             : t("#scroll-top").removeClass("fixed");
         },
