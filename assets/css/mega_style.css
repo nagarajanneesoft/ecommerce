@@ -13369,17 +13369,17 @@ span.toggle:before {
   letter-spacing: 0.05em;
 }
 .marketplace-box .post-date_trash {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 4.5rem;
-    padding: 1rem 0.8rem 0.8rem;
-    color: #fff;
-    background: #fff;
-    font-family: Poppins, sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 4.5rem;
+  padding: 1rem 0.8rem 0.8rem;
+  color: #fff;
+  background: #fff;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 .post-media .day {
   display: block;
@@ -14860,8 +14860,19 @@ h6.heading-bottom-border {
 }
 
 .product_brand_logo {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
+}
+.miles_store {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.miles_store a {
+  color: blue;
+  cursor: pointer;
 }
 .product_title_head {
   display: flex;
