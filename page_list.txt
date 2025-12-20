@@ -28,7 +28,6 @@ https://nagarajanneesoft.github.io/ecommerce/admin_add_service.html
 https://nagarajanneesoft.github.io/ecommerce/admin_car.html
 https://nagarajanneesoft.github.io/ecommerce/admin_add_car.html
 https://nagarajanneesoft.github.io/ecommerce/seller.html
-
 https://nagarajanneesoft.github.io/ecommerce/seller.html
 https://nagarajanneesoft.github.io/ecommerce/prime.html
 https://nagarajanneesoft.github.io/ecommerce/transactions.html

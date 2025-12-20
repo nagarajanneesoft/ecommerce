@@ -13368,6 +13368,19 @@ span.toggle:before {
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
+.marketplace-box .post-date_trash {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 4.5rem;
+    padding: 1rem 0.8rem 0.8rem;
+    color: #fff;
+    background: #fff;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
 .post-media .day {
   display: block;
   font-size: 1.8rem;
@@ -15461,9 +15474,6 @@ h6.heading-bottom-border {
   color: #000;
 }
 
-.noti-header_menu {
-  width: 300px;
-}
 .noti-header_menu:before {
   left: 25% !important;
 }
@@ -15491,10 +15501,15 @@ h6.heading-bottom-border {
   padding: 1rem;
   margin: 0;
   padding-bottom: 0.5rem;
+  width: 250px;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .noti-header_menu ul li {
   border-bottom: 1px solid #e9ecef;
   margin-bottom: 0.5rem;
+  cursor: pointer;
 }
 .noti-header_menu ul li .noti h6 {
   font-size: 1rem;
