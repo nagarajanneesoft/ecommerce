@@ -15135,6 +15135,55 @@ h6.heading-bottom-border {
   font-size: 12px;
   margin-left: 8px;
 }
+.verify-badge {
+  display: inline-block;
+  background: green;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+.wallet-wrapper {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wallet-card {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.wallet-icon {
+  width: 40px;
+  height: 40px;
+  background: #111827;
+  color: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 18px;
+}
+
+.add-funds-btn {
+  background: #84cc16;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  border: none;
+}
+
+.add-funds-btn:hover {
+  background: #65a30d;
+  color: #fff;
+}
 
 /* tabs like nav-pills but flat */
 .page-tabs .nav-link {
@@ -15171,6 +15220,11 @@ h6.heading-bottom-border {
   .profile-card {
     padding: 12px;
     margin-top: 0px;
+  }
+  .wallet-wrapper {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0 0;
   }
 }
 
@@ -15363,7 +15417,7 @@ h6.heading-bottom-border {
 .cases-container {
   height: 75vh;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 .post-container {
   background: #fff;
