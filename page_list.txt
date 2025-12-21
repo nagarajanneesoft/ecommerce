@@ -32,7 +32,7 @@ https://nagarajanneesoft.github.io/ecommerce/seller.html
 https://nagarajanneesoft.github.io/ecommerce/prime.html
 https://nagarajanneesoft.github.io/ecommerce/transactions.html
 https://nagarajanneesoft.github.io/ecommerce/wishlist.html
-
 https://nagarajanneesoft.github.io/ecommerce/admin_event.html
 https://nagarajanneesoft.github.io/ecommerce/admin_add_event.html
+https://nagarajanneesoft.github.io/ecommerce/unfollow.html
 
