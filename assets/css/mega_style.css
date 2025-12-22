@@ -14858,6 +14858,14 @@ h6.heading-bottom-border {
   flex-direction: unset;
   width: 100%;
 }
+.product_brand_detail_market {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: unset;
+  width: 100%;
+}
 
 .product_brand_logo {
   width: 30px;
