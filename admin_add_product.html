@@ -419,10 +419,10 @@
                     <h5 class="p-2 text-start">INCLUDE SOME DETAILS</h5>
 
                     <div class="form-group">
-                      <label>Car Type *</label>
+                      <label> Product Type *</label>
                       <select class="form-control">
-                        <option>New Cars</option>
-                        <option>Used Cars</option>
+                        <option>New Products</option>
+                        <option>Old Products</option>
                       </select>
                     </div>
 
@@ -647,11 +647,20 @@
                   </div>
 
                   <div class="form-group">
-                    <label>Price *</label>
-                    <select class="form-control">
-                      <option>Sale Price ($100)</option>
-                      <option>Discounted Price ($80)</option>
-                    </select>
+                    <label>Original Price *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="($100)"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label>Discounted Price *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="($80)"
+                    />
                   </div>
                   <div class="form-group">
                     <label>Quantity *</label>
@@ -777,109 +786,28 @@
                     </div>
                   </div>
 
-                  <!-- LOCATION -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">CONFIRM YOUR LOCATION</h5>
-                    <div class="tabs">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active"
-                            id="tab-popular"
-                            data-toggle="tab"
-                            href="#popular-content"
-                            role="tab"
-                            aria-controls="popular-content"
-                            aria-selected="true"
-                            >LIST</a
-                          >
-                        </li>
-
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            id="recent-tab"
-                            data-toggle="tab"
-                            href="#recent-content"
-                            role="tab"
-                            aria-controls="recent-content"
-                            aria-selected="true"
-                            >CURRENT LOCATION</a
-                          >
-                        </li>
-                      </ul>
-                      <div class="tab-content">
-                        <div
-                          class="tab-pane fade show active"
-                          id="popular-content"
-                          role="tabpanel"
-                          aria-labelledby="tab-popular"
-                        >
-                          <div class="form-group">
-                            <label>State *</label>
-                            <select class="form-control">
-                              <option>Select state</option>
-                            </select>
-                          </div>
-
-                          <div class="mandatory">This field is mandatory</div>
-                        </div>
-                        <div
-                          class="tab-pane fade"
-                          id="recent-content"
-                          role="tabpanel"
-                          aria-labelledby="recent-tab"
-                        >
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Search"
-                            />
-                          </div>
-
-                          <div class="mandatory">This field is mandatory</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- REVIEW DETAILS -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">REVIEW YOUR DETAILS</h5>
-
+                  <div class="">
                     <div
-                      class="contact-item d-flex align-items-center gap-3 p-3"
+                      class="add_Atribute_button d-flex justify-content-between align-items-center"
                     >
-                      <div class="icon mr-3">
-                        <img
-                          src="assets/images/elements/testimonial/client1.png"
-                          class="rounded-circle border border-danger"
-                          width="62"
-                          height="62"
-                          alt="client"
+                      <h5 class="mb-0">Add Additional Attributes</h5>
+                      <button
+                        class="btn btn-primary btn-rounded btn-md"
+                        id="addAttributeBtn"
+                        type="button"
+                      >
+                        <i class="fa fa-plus"></i> Add
+                      </button>
+                    </div>
+                    <!-- Dynamic fields container -->
+                    <div id="attributeContainer">
+                      <div class="form-group">
+                        <label>Name *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Add Additional Attributes"
                         />
-                      </div>
-
-                      <div class="form-group row" style="width: 50%">
-                        <div class="col-sm-12">
-                          <label>Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="John"
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group row" style="width: 50%">
-                        <div class="col-sm-12">
-                          <label>Mobile Number</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="+91 9976543210"
-                          />
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -1144,6 +1072,22 @@
      <div class="small mt-1">Add Photo</div>`;
         document.getElementById(closeId).classList.add("d-none");
       }
+    </script>
+    <script>
+      document
+        .getElementById("addAttributeBtn")
+        .addEventListener("click", function () {
+          const container = document.getElementById("attributeContainer");
+
+          const fieldHTML = `
+      <div class="form-group">
+        <label>Name *</label>
+        <input type="text" class="form-control" placeholder="Add Additional Attributes" />
+      </div>
+    `;
+
+          container.insertAdjacentHTML("beforeend", fieldHTML);
+        });
     </script>
   </body>
 </html>

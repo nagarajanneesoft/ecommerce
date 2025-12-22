@@ -15570,6 +15570,20 @@ h6.heading-bottom-border {
   color: red;
   font-weight: 600;
 }
+.wishlist-product .out_stock_div p {
+  margin: 0;
+  padding-bottom: 6rem;
+}
+.address_content .select-custom:after {
+  top: 75%;
+}
+.add_Atribute_button
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
 .noti-header_menu ul {
   padding: 1rem;
   margin: 0;
