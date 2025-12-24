@@ -15577,8 +15577,7 @@ h6.heading-bottom-border {
 .address_content .select-custom:after {
   top: 75%;
 }
-.add_Atribute_button
-{
+.add_Atribute_button {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15644,8 +15643,26 @@ h6.heading-bottom-border {
   line-height: 1.6rem;
   text-decoration: none;
 }
+.onehub-store-bg {
+  background: #373b44;
+  background: -webkit-linear-gradient(to bottom, #08c, #fff);
+  background: linear-gradient(to bottom, #08c, #fff);
+}
 
-
-/* Final Mega Menu Start */
-
-/* Final Mega Menu End */
+.prime_white_bg_left {
+  background: #fff;
+}
+.prime_white_bg_right {
+  padding: 2rem;
+  border: 2px solid #e7e7e7;
+  border-radius: 1rem;
+  background: #fff;
+}
+.prime-banner {
+  border: 2px solid #e7e7e7;
+  border-radius: 1rem;
+}
+.no-border
+{
+  border: none !important;
+}
