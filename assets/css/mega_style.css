@@ -742,6 +742,7 @@
 .owl-theme .owl-nav [class*="owl-"] i:before {
   margin: 0;
   width: auto;
+  color: #fff;
 }
 .owl-theme .owl-nav [class*="owl-"]:not(.disabled):hover {
   background: transparent;
@@ -5452,6 +5453,7 @@ figure .porto-loading-icon {
   transition: box-shadow 0.3s ease-in-out;
   border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 0.5rem;
+  background: #fff;
 }
 .product-default a {
   color: inherit;
@@ -14181,7 +14183,7 @@ section {
 }
 .featured-products-section {
   padding-bottom: 2rem;
-  background: #fbfbfb;
+  /* background: #fbfbfb; */
 }
 .new-products-section .products-slider {
   padding-bottom: 1px;
