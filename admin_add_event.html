@@ -246,7 +246,7 @@
       </header>
       <!-- End .header -->
 
-      <main class="main about">
+      <main class="main about onehub-store-bg">
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
           <div class="container">
             <ol class="breadcrumb">
@@ -265,7 +265,7 @@
           <div class="container">
             <div class="row">
               <div
-                class="sidebar col-sm-3 event-box order-summary sidebar-wrapperr"
+                class="sidebar col-sm-3 event-box order-summary sidebar-wrapperr prime_white_bg_left"
               >
                 <div class="contact-item d-flex align-items-center gap-3 p-3">
                   <div class="icon mr-3">
@@ -387,7 +387,7 @@
                     My Events
                   </a>
                   <a
-                    href="#"
+                    href="admin_car.html"
                     class="list-group-item list-group-item-action border-0"
                   >
                     My Automotive
@@ -401,493 +401,498 @@
                 </div>
               </div>
               <div class="col-sm-9" style="padding: 0rem 2rem">
-                <div class="post-container">
-                  <h5 class="p-2 text-center">POST YOUR AD</h5>
-                  <!-- SELECTED CATEGORY -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">SELECTED CATEGORY</h5>
-                    <p>
-                      My Products / Product Name
-                      <a href="#" class="text-decoration-underline ml-2"
-                        >Change</a
-                      >
-                    </p>
-                  </div>
+                <div class="prime_white_bg_right">
+                  <div class="post-container">
+                    <h5 class="p-2 text-center">POST YOUR AD</h5>
+                    <!-- SELECTED CATEGORY -->
+                    <div class="mb-4">
+                      <h5 class="p-2 text-start">SELECTED CATEGORY</h5>
+                      <p>
+                        My Products / Product Name
+                        <a href="#" class="text-decoration-underline ml-2"
+                          >Change</a
+                        >
+                      </p>
+                    </div>
 
-                  <!-- DETAILS -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">INCLUDE SOME DETAILS</h5>
+                    <!-- DETAILS -->
+                    <div class="mb-4">
+                      <h5 class="p-2 text-start">INCLUDE SOME DETAILS</h5>
+
+                      <div class="form-group">
+                        <label>Car Type *</label>
+                        <select class="form-control">
+                          <option>New Cars</option>
+                          <option>Used Cars</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Select category and subcategory *</label>
+                        <select class="form-control">
+                          <option>subcategory</option>
+                          <option>subcategory</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Name *</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Mention key features"
+                        />
+                      </div>
+
+                      <div class="form-group">
+                        <label>Description *</label>
+                        <textarea
+                          class="form-control"
+                          rows="5"
+                          placeholder="Include condition, features, etc"
+                        ></textarea>
+                      </div>
+
+                      <div class="form-group">
+                        <label>Additional Information *</label>
+                        <textarea
+                          class="form-control"
+                          rows="5"
+                          placeholder="Include condition, features, etc"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <!-- PHOTO UPLOAD -->
+                    <div class="">
+                      <h5 class="p-2 text-start">UPLOAD UP TO 12 PHOTOS</h5>
+
+                      <div class="row">
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-sm-2 mb-2 col-md-">
+                          <div
+                            class="upload-box"
+                            onclick="document.getElementById('file1').click()"
+                          >
+                            <input
+                              type="file"
+                              id="file1"
+                              accept="image/*"
+                              style="display: none"
+                              onchange="showPreview(this, 'preview1')"
+                            />
+
+                            <div id="preview1" class="text-center">
+                              <img
+                                src="https://img.icons8.com/ios/50/000000/camera.png"
+                              />
+                              <div class="small mt-1">Add Photo</div>
+                            </div>
+                            <!-- Close Icon -->
+                            <span
+                              id="close1"
+                              class="close-icon"
+                              onclick="removeImage(event, 'preview1', 'close1')"
+                            >
+                              &times;
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mandatory">This field is mandatory</div>
+                    </div>
 
                     <div class="form-group">
-                      <label>Car Type *</label>
+                      <label>Price *</label>
                       <select class="form-control">
-                        <option>New Cars</option>
-                        <option>Used Cars</option>
+                        <option>Sale Price ($100)</option>
+                        <option>Discounted Price ($80)</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label>Quantity *</label>
+                      <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
                       </select>
                     </div>
 
                     <div class="form-group">
-                      <label>Select category and subcategory *</label>
-                      <select class="form-control">
-                        <option>subcategory</option>
-                        <option>subcategory</option>
-                      </select>
+                      <label>Shipping Type *</label>
+                      <div class="d-flex gap-2">
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Curb</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Pick Up</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Delivery</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                      </div>
                     </div>
 
                     <div class="form-group">
-                      <label>Name *</label>
+                      <label>Shipping price *</label>
                       <input
                         type="text"
                         class="form-control"
                         placeholder="Mention key features"
                       />
                     </div>
+                    <div class="form-group">
+                      <label>Size *</label>
+                      <div class="d-flex gap-2">
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">XS</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">S</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">M</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                      </div>
+                    </div>
 
                     <div class="form-group">
-                      <label>Description *</label>
-                      <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="Include condition, features, etc"
-                      ></textarea>
+                      <label>Color *</label>
+                      <div class="d-flex gap-2">
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Red</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Blue</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                        <div class="custom-control custom-radio d-flex m-0">
+                          <input
+                            type="radio"
+                            class="custom-control-input"
+                            name="radio"
+                            checked=""
+                          />
+                          <label class="custom-control-label">Green</label>
+                        </div>
+                        <!-- End .custom-checkbox -->
+                      </div>
                     </div>
 
-                    <div class="form-group">
-                      <label>Additional Information *</label>
-                      <textarea
-                        class="form-control"
-                        rows="5"
-                        placeholder="Include condition, features, etc"
-                      ></textarea>
-                    </div>
-                  </div>
+                    <!-- LOCATION -->
+                    <div class="mb-4">
+                      <h5 class="p-2 text-start">CONFIRM YOUR LOCATION</h5>
+                      <div class="tabs">
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active"
+                              id="tab-popular"
+                              data-toggle="tab"
+                              href="#popular-content"
+                              role="tab"
+                              aria-controls="popular-content"
+                              aria-selected="true"
+                              >LIST</a
+                            >
+                          </li>
 
-                  <!-- PHOTO UPLOAD -->
-                  <div class="">
-                    <h5 class="p-2 text-start">UPLOAD UP TO 12 PHOTOS</h5>
-
-                    <div class="row">
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
-
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
-                          </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
+                          <li class="nav-item">
+                            <a
+                              class="nav-link"
+                              id="recent-tab"
+                              data-toggle="tab"
+                              href="#recent-content"
+                              role="tab"
+                              aria-controls="recent-content"
+                              aria-selected="true"
+                              >CURRENT LOCATION</a
+                            >
+                          </li>
+                        </ul>
+                        <div class="tab-content">
+                          <div
+                            class="tab-pane fade show active"
+                            id="popular-content"
+                            role="tabpanel"
+                            aria-labelledby="tab-popular"
                           >
-                            &times;
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
+                            <div class="form-group">
+                              <label>State *</label>
+                              <select class="form-control">
+                                <option>Select state</option>
+                              </select>
+                            </div>
 
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
+                            <div class="mandatory">This field is mandatory</div>
                           </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
+                          <div
+                            class="tab-pane fade"
+                            id="recent-content"
+                            role="tabpanel"
+                            aria-labelledby="recent-tab"
                           >
-                            &times;
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
+                            <div class="form-group">
+                              <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Search"
+                              />
+                            </div>
 
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
+                            <div class="mandatory">This field is mandatory</div>
                           </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
-                          >
-                            &times;
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
-
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
-                          </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
-                          >
-                            &times;
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
-
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
-                          </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
-                          >
-                            &times;
-                          </span>
-                        </div>
-                      </div>
-                      <div class="col-sm-2 mb-2 col-md-">
-                        <div
-                          class="upload-box"
-                          onclick="document.getElementById('file1').click()"
-                        >
-                          <input
-                            type="file"
-                            id="file1"
-                            accept="image/*"
-                            style="display: none"
-                            onchange="showPreview(this, 'preview1')"
-                          />
-
-                          <div id="preview1" class="text-center">
-                            <img
-                              src="https://img.icons8.com/ios/50/000000/camera.png"
-                            />
-                            <div class="small mt-1">Add Photo</div>
-                          </div>
-                          <!-- Close Icon -->
-                          <span
-                            id="close1"
-                            class="close-icon"
-                            onclick="removeImage(event, 'preview1', 'close1')"
-                          >
-                            &times;
-                          </span>
                         </div>
                       </div>
                     </div>
 
-                    <div class="mandatory">This field is mandatory</div>
-                  </div>
+                    <!-- REVIEW DETAILS -->
+                    <div class="mb-4">
+                      <h5 class="p-2 text-start">REVIEW YOUR DETAILS</h5>
 
-                  <div class="form-group">
-                    <label>Price *</label>
-                    <select class="form-control">
-                      <option>Sale Price ($100)</option>
-                      <option>Discounted Price ($80)</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label>Quantity *</label>
-                    <select class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                    </select>
-                  </div>
-
-                  <div class="form-group">
-                    <label>Shipping Type *</label>
-                    <div class="d-flex gap-2">
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Curb</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Pick Up</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Delivery</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label>Shipping price *</label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Mention key features"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>Size *</label>
-                    <div class="d-flex gap-2">
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">XS</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">S</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">M</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label>Color *</label>
-                    <div class="d-flex gap-2">
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Red</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Blue</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                      <div class="custom-control custom-radio d-flex m-0">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radio"
-                          checked=""
-                        />
-                        <label class="custom-control-label">Green</label>
-                      </div>
-                      <!-- End .custom-checkbox -->
-                    </div>
-                  </div>
-
-                  <!-- LOCATION -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">CONFIRM YOUR LOCATION</h5>
-                    <div class="tabs">
-                      <ul class="nav nav-tabs" role="tablist">
-                        <li class="nav-item">
-                          <a
-                            class="nav-link active"
-                            id="tab-popular"
-                            data-toggle="tab"
-                            href="#popular-content"
-                            role="tab"
-                            aria-controls="popular-content"
-                            aria-selected="true"
-                            >LIST</a
-                          >
-                        </li>
-
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            id="recent-tab"
-                            data-toggle="tab"
-                            href="#recent-content"
-                            role="tab"
-                            aria-controls="recent-content"
-                            aria-selected="true"
-                            >CURRENT LOCATION</a
-                          >
-                        </li>
-                      </ul>
-                      <div class="tab-content">
-                        <div
-                          class="tab-pane fade show active"
-                          id="popular-content"
-                          role="tabpanel"
-                          aria-labelledby="tab-popular"
-                        >
-                          <div class="form-group">
-                            <label>State *</label>
-                            <select class="form-control">
-                              <option>Select state</option>
-                            </select>
-                          </div>
-
-                          <div class="mandatory">This field is mandatory</div>
+                      <div
+                        class="contact-item d-flex align-items-center gap-3 p-3"
+                      >
+                        <div class="icon mr-3">
+                          <img
+                            src="assets/images/elements/testimonial/client1.png"
+                            class="rounded-circle border border-danger"
+                            width="62"
+                            height="62"
+                            alt="client"
+                          />
                         </div>
-                        <div
-                          class="tab-pane fade"
-                          id="recent-content"
-                          role="tabpanel"
-                          aria-labelledby="recent-tab"
-                        >
-                          <div class="form-group">
+
+                        <div class="form-group row" style="width: 50%">
+                          <div class="col-sm-12">
+                            <label>Name</label>
                             <input
                               type="text"
                               class="form-control"
-                              placeholder="Search"
+                              value="John"
                             />
                           </div>
-
-                          <div class="mandatory">This field is mandatory</div>
+                        </div>
+                        <div class="form-group row" style="width: 50%">
+                          <div class="col-sm-12">
+                            <label>Mobile Number</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              value="+91 9976543210"
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <!-- REVIEW DETAILS -->
-                  <div class="mb-4">
-                    <h5 class="p-2 text-start">REVIEW YOUR DETAILS</h5>
-
-                    <div
-                      class="contact-item d-flex align-items-center gap-3 p-3"
+                    <!-- SUBMIT BUTTON -->
+                    <button
+                      class="btn btn-dark btn-rounded mr-0 btn-md"
+                      disabled
                     >
-                      <div class="icon mr-3">
-                        <img
-                          src="assets/images/elements/testimonial/client1.png"
-                          class="rounded-circle border border-danger"
-                          width="62"
-                          height="62"
-                          alt="client"
-                        />
-                      </div>
-
-                      <div class="form-group row" style="width: 50%">
-                        <div class="col-sm-12">
-                          <label>Name</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="John"
-                          />
-                        </div>
-                      </div>
-                      <div class="form-group row" style="width: 50%">
-                        <div class="col-sm-12">
-                          <label>Mobile Number</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            value="+91 9976543210"
-                          />
-                        </div>
-                      </div>
-                    </div>
+                      Post now
+                    </button>
                   </div>
-
-                  <!-- SUBMIT BUTTON -->
-                  <button class="btn btn-dark btn-rounded mr-0 btn-md" disabled>
-                    Post now
-                  </button>
                 </div>
               </div>
             </div>

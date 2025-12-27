@@ -15662,7 +15662,9 @@ h6.heading-bottom-border {
   border: 2px solid #e7e7e7;
   border-radius: 1rem;
 }
-.no-border
-{
+.no-border {
   border: none !important;
+}
+i.icon-heart {
+  color: red;
 }
