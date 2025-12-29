@@ -15647,8 +15647,9 @@ h6.heading-bottom-border {
 }
 .onehub-store-bg {
   background: #373b44;
-  background: -webkit-linear-gradient(to bottom, #08c, #fff);
-  background: linear-gradient(to bottom, #08c, #fff);
+  background: -webkit-linear-gradient(to bottom, #0088cc8f, #fff);
+  background: linear-gradient(to bottom, #0088cc8f, #fff);
+  /* background: linear-gradient(to bottom, #08c, #fff); */
 }
 
 .prime_white_bg_left {
