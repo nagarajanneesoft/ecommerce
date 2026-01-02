@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Mega Store</title>
+
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Bootstrap eCommerce Template" />
+    <meta name="author" content="SW-THEMES" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/icons/favicon.png"
+    />
+
+    <script>
+      WebFontConfig = {
+        google: {
+          families: [
+            "Open+Sans:300,400,600,700,800",
+            "Poppins:300,400,500,600,700",
+            "Shadows+Into+Light:400",
+          ],
+        },
+      };
+      (function (d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "assets/js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <!-- Plugins CSS File -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Main CSS File -->
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css" /> -->
+    <link rel="stylesheet" href="assets/css/mega_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/vendor/fontawesome-free/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+        <div class="header-top bg-primary text-white">
+          <div class="container">
+            <div class="header-right header-dropdowns ml-0 ml-sm-auto w-sm-100">
+              <div class="header-dropdown">
+                <a href="#"><i class="icon-user-2"></i> Username</a>
+                <div class="header-menu">
+                  <ul>
+                    <li>
+                      <a href="dashboard.html"
+                        ><i class="mr-2"></i>My Profile</a
+                      >
+                    </li>
+
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Orders</a>
+                    </li>
+                    <li>
+                      <a href="wishlist.html"
+                        ><i class="mr-2"></i>Wishlist (9)</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Gift Cards</a>
+                    </li>
+                    <li>
+                      <a href="prime.html"
+                        ><i class="mr-2"></i>Your Membership</a
+                      >
+                    </li>
+                    <li>
+                      <a href="unfollow.html"><i class="mr-2"></i>Following</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Logout</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+
+              <div class="header-dropdown dropdown-expanded d-none d-lg-block">
+                <div class="header-menu">
+                  <ul>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="seller.html">Become a Seller</a></li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+
+              <span class="separator"></span>
+
+              <div class="header-dropdown">
+                <a href="#"><i class=""></i>Help</a>
+                <div class="header-menu">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>24x7 Customer Care</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Advertise</a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="mr-2"></i>Download App</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <span class="separator"></span>
+              <div class="header-dropdown">
+                <a href="#"><i class=""></i>Notifications</a>
+
+                <div class="header-menu noti-header_menu">
+                  <ul>
+                    <li>
+                      <div class="noti">
+                        <h6>Order Delivered</h6>
+                        <p class="">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                        <p class="hour_span">7 hours ago</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="noti">
+                        <h6>Order Delivered</h6>
+                        <p class="">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                        <p class="hour_span">7 hours ago</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="noti">
+                        <h6>Order Delivered</h6>
+                        <p class="">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                        <p class="hour_span">7 hours ago</p>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="noti">
+                        <h6>Order Delivered</h6>
+                        <p class="">
+                          Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry.
+                        </p>
+                        <p class="hour_span">7 hours ago</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End .header-menu -->
+              </div>
+              <!-- End .header-dropown -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-top -->
+        <div class="header-middle sticky-header">
+          <div class="container">
+            <div class="header-left">
+              <button class="mobile-menu-toggler" type="button">
+                <i class="fas fa-bars"></i>
+              </button>
+
+              <a href="index.html" class="logo w-100">
+                <img src="assets/images/logo.png" alt="Porto Logo" />
+              </a>
+
+              <nav class="main-nav w-100">
+                <ul class="menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="marketplace.html">Marketplace</a></li>
+                  <li><a href="business.html">Business</a></li>
+                  <li><a href="sales.html">Sales</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="event.html">Events</a></li>
+                  <li><a href="automotive.html">Automotive</a></li>
+                  <li><a href="onehubstore.html">Onehub Store</a></li>
+                </ul>
+              </nav>
+            </div>
+            <!-- End .header-left -->
+
+            <div class="header-right">
+              <div
+                class="header-icon header-search header-search-inline header-search-category w-lg-max text-right mt-0"
+              >
+                <form action="#" method="get">
+                  <div class="header-search-wrapper">
+                    <input
+                      type="search"
+                      class="form-control"
+                      name="q"
+                      id="q"
+                      placeholder="Search for Products, Brands and More"
+                      required
+                    />
+
+                    <!-- End .select-custom -->
+                    <button
+                      class="btn icon-magnifier p-0"
+                      title="search"
+                      type="submit"
+                    ></button>
+                  </div>
+                  <!-- End .header-search-wrapper -->
+                </form>
+              </div>
+              <!-- End .header-search -->
+            </div>
+            <!-- End .header-right -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .header-middle -->
+      </header>
+      <!-- End .header -->
+
+      <main class="main">
+        <div class="container">
+          <nav aria-label="breadcrumb" class="breadcrumb-nav">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="demo4.html"><i class="icon-home"></i></a>
+              </li>
+              <li class="breadcrumb-item"><a href="#">Products</a></li>
+            </ol>
+          </nav>
+
+          <div class="product-single-container product-single-default">
+            <div class="row">
+              <div class="col-lg-5 col-md-6 product-single-gallery">
+                <div class="product-slider-container">
+                  <div class="label-group">
+                    <div class="product-label label-hot2">
+                      <a
+                        href="#"
+                        class="btn-icon-wish new-btn-icon-wish"
+                        title="wishlist"
+                        ><i class="icon-heart" style="font-size: 2rem"></i
+                      ></a>
+                    </div>
+                  </div>
+
+                  <div
+                    class="product-single-carousel owl-carousel owl-theme show-nav-hover"
+                  >
+                    <div class="product-item">
+                      <img
+                        class="product-single-image"
+                        src="assets/images/products/zoom/product-1-big.jpg"
+                        data-zoom-image="assets/images/products/zoom/product-1-big.jpg"
+                        width="468"
+                        height="468"
+                        alt="product"
+                      />
+                    </div>
+                    <div class="product-item">
+                      <img
+                        class="product-single-image"
+                        src="assets/images/products/zoom/product-2-big.jpg"
+                        data-zoom-image="assets/images/products/zoom/product-2-big.jpg"
+                        width="468"
+                        height="468"
+                        alt="product"
+                      />
+                    </div>
+                    <div class="product-item">
+                      <img
+                        class="product-single-image"
+                        src="assets/images/products/zoom/product-3-big.jpg"
+                        data-zoom-image="assets/images/products/zoom/product-3-big.jpg"
+                        width="468"
+                        height="468"
+                        alt="product"
+                      />
+                    </div>
+                    <div class="product-item">
+                      <img
+                        class="product-single-image"
+                        src="assets/images/products/zoom/product-4-big.jpg"
+                        data-zoom-image="assets/images/products/zoom/product-4-big.jpg"
+                        width="468"
+                        height="468"
+                        alt="product"
+                      />
+                    </div>
+                    <div class="product-item">
+                      <img
+                        class="product-single-image"
+                        src="assets/images/products/zoom/product-5-big.jpg"
+                        data-zoom-image="assets/images/products/zoom/product-5-big.jpg"
+                        width="468"
+                        height="468"
+                        alt="product"
+                      />
+                    </div>
+                  </div>
+                  <!-- End .product-single-carousel -->
+                  <span class="prod-full-screen">
+                    <i class="icon-plus"></i>
+                  </span>
+                </div>
+
+                <div class="prod-thumbnail owl-dots">
+                  <div class="owl-dot">
+                    <img
+                      src="assets/images/products/zoom/product-1.jpg"
+                      width="110"
+                      height="110"
+                      alt="product-thumbnail"
+                    />
+                  </div>
+                  <div class="owl-dot">
+                    <img
+                      src="assets/images/products/zoom/product-2.jpg"
+                      width="110"
+                      height="110"
+                      alt="product-thumbnail"
+                    />
+                  </div>
+                  <div class="owl-dot">
+                    <img
+                      src="assets/images/products/zoom/product-3.jpg"
+                      width="110"
+                      height="110"
+                      alt="product-thumbnail"
+                    />
+                  </div>
+                  <div class="owl-dot">
+                    <img
+                      src="assets/images/products/zoom/product-4.jpg"
+                      width="110"
+                      height="110"
+                      alt="product-thumbnail"
+                    />
+                  </div>
+                  <div class="owl-dot">
+                    <img
+                      src="assets/images/products/zoom/product-5.jpg"
+                      width="110"
+                      height="110"
+                      alt="product-thumbnail"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- End .product-single-gallery -->
+
+              <div class="col-lg-7 col-md-6 product-single-details">
+                <div class="product_title_head">
+                  <span><h5 class="">Men Black Sports Shoes</h5></span>
+                  <span
+                    ><span
+                      ><img
+                        src="assets/images/user.svg"
+                        class="img-fluid product_brand_logo"
+                        alt="" /></span
+                  ></span>
+                </div>
+
+                <div class="ratings-container">
+                  <div class="product-ratings">
+                    <span class="ratings" style="width: 60%"></span>
+                    <!-- End .ratings -->
+                    <span class="tooltiptext tooltip-top"></span>
+                  </div>
+                  <!-- End .product-ratings -->
+
+                  <a href="#" class="rating-link">( 6 Reviews )</a>
+                </div>
+                <!-- End .ratings-container -->
+
+                <hr class="short-divider" />
+
+                <div class="price-box">
+                  <span class="old-price">$1,999.00</span>
+                  <span class="new-price">$1,699.00</span>
+                </div>
+                <!-- End .price-box -->
+
+                <div class="product-desc">
+                  <p>
+                    Pellentesque habitant morbi tristique senectus et netus et
+                    malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                    feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+                    eu libero sit amet quam egestas semper. Aenean ultricies mi
+                    vitae est. Mauris placerat eleifend leo.
+                  </p>
+                </div>
+                <!-- End .product-desc -->
+
+                <ul class="single-info-list">
+                  <li>SKU: <strong>654613612</strong></li>
+
+                  <li>
+                    CATEGORY:
+                    <strong
+                      ><a href="#" class="product-category">SHOES</a></strong
+                    >
+                  </li>
+
+                  <li>
+                    TAGs:
+                    <strong
+                      ><a href="#" class="product-category">CLOTHES</a></strong
+                    >,
+                    <strong
+                      ><a href="#" class="product-category">SWEATER</a></strong
+                    >
+                  </li>
+                </ul>
+
+                <div class="product-filters-container d-flex gap-2">
+                  <div class="product-single-filter select-custom">
+                    <label>COLOR:</label>
+                    <select name="orderby" class="form-control">
+                      <option value="" selected="selected">
+                        CHOOSE AN OPTION
+                      </option>
+                      <option value="1">BLACK</option>
+                      <option value="2">BLUE</option>
+                      <option value="3">INDEGO</option>
+                      <option value="4">RIGHT-BLUE</option>
+                      <option value="5">RED</option>
+                    </select>
+                  </div>
+
+                  <div class="product-single-filter select-custom">
+                    <label>SIZE:</label>
+                    <select name="orderby" class="form-control">
+                      <option value="" selected="selected">
+                        CHOOSE AN OPTION
+                      </option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                  </div>
+
+                  <div class="product-single-filter">
+                    <label></label>
+                    <a class="font1 text-uppercase clear-btn" href="#">Clear</a>
+                  </div>
+                  <!---->
+                </div>
+
+                <div class="product-action">
+                  <div class="main_one">
+                    <div class="product-single-qty">
+                      <input
+                        class="horizontal-quantity form-control"
+                        type="text"
+                      />
+                    </div>
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow-none mr-2"
+                      title="Add to Cart"
+                      >Add to Cart</a
+                    >
+                    <a href="#" class="btn btn-primary shadow-none">Buy Now</a>
+                  </div>
+                  <div class="main_two">
+                    <div class="check_available_user gap-3">
+                      <span class="d-flex gap-2 align-items-center">
+                        <img
+                          src="assets/images/nike_logo.png"
+                          class="img-fluid product_brand_logo"
+                          alt=""
+                        />
+                        <p class="p-0 m-0">Username</p>
+                      </span>
+                      <span>
+                        <i
+                          class="fab fa-rocketchat"
+                          aria-hidden="true"
+                          style="color: var(--primary-color); cursor: pointer"
+                        ></i>
+                        Check Availablity
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <!-- End .product-action -->
+
+                <hr class="divider mb-0 mt-0" />
+
+                <div class="mb-3">
+                  <div
+                    class="row d-flex justify-content-between align-items-center"
+                  >
+                    <div class="col-sm-6">
+                      <div class="order-summary2">
+                        <table class="table table-mini-cart table-borderless">
+                          <thead>
+                            <tr>
+                              <th colspan="2">
+                                <h6 class="text-success m-0 p-0">In stock</h6>
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="product-col">
+                                <h3 class="product-title">Ships from</h3>
+                              </td>
+
+                              <td class="price-col">
+                                <span>Amazon</span>
+                              </td>
+                            </tr>
+
+                            <tr>
+                              <td class="product-col">
+                                <h3 class="product-title">Sold by</h3>
+                              </td>
+
+                              <td class="price-col">
+                                <span><a href="">Happy eCom</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="product-col">
+                                <h3 class="product-title">Payment</h3>
+                              </td>
+
+                              <td class="price-col">
+                                <span><a href="">Happy eCom</a></span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="product-col">
+                                <h3 class="product-title">Gift options</h3>
+                              </td>
+
+                              <td class="price-col">
+                                <span><a href="">Happy eCom</a></span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <p>
+                        FREE delivery Saturday, 6 December.
+                        <a href="#">Details</a>
+                      </p>
+                      <a
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#myModal"
+                        class="d-flex"
+                        style="gap: 1rem"
+                        ><i class="icon-map-location"></i
+                        ><span>Deliver to Username - Chennai 600000.</span></a
+                      >
+
+                      <!-- The Modal -->
+                      <div class="modal location_details" id="myModal">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                              <h6 class="modal-title m-0 p-0">
+                                Choose your location
+                              </h6>
+                              <button
+                                type="button"
+                                class="close"
+                                data-dismiss="modal"
+                              >
+                                &times;
+                              </button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                              <form action="#">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        required
+                                        placeholder="enter an Indian pincode"
+                                      />
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <button
+                                        class="btn w-100 btn-dark btn-place-order btn-md"
+                                        type="submit"
+                                      >
+                                        Apply
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End .product single-share -->
+              </div>
+              <!-- End .product-single-details -->
+            </div>
+            <!-- End .row -->
+          </div>
+          <!-- End .product-single-container -->
+
+          <div class="product-single-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="product-tab-desc"
+                  data-toggle="tab"
+                  href="#product-desc-content"
+                  role="tab"
+                  aria-controls="product-desc-content"
+                  aria-selected="true"
+                  >Product Details</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="product-tab-tags"
+                  data-toggle="tab"
+                  href="#product-tags-content"
+                  role="tab"
+                  aria-controls="product-tags-content"
+                  aria-selected="false"
+                  >Additional Information</a
+                >
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="product-desc-content"
+                role="tabpanel"
+                aria-labelledby="product-tab-desc"
+              >
+                <div class="row">
+                  <div class="col-sm-6">
+                    <table class="table table-striped mt-2">
+                      <tbody>
+                        <tr>
+                          <th>Date First Available</th>
+                          <td>17 June 2022</td>
+                        </tr>
+
+                        <tr>
+                          <th>ASI</th>
+                          <td>B099FDC6TF</td>
+                        </tr>
+
+                        <tr>
+                          <th>Item model number</th>
+                          <td>232264</td>
+                        </tr>
+
+                        <tr>
+                          <th>Country of Origin</th>
+                          <td>Vietna</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!-- End .product-desc-content -->
+              </div>
+              <!-- End .tab-pane -->
+
+              <div
+                class="tab-pane fade"
+                id="product-tags-content"
+                role="tabpanel"
+                aria-labelledby="product-tab-tags"
+              >
+                <div class="row">
+                  <div class="col-sm-6">
+                    <table class="table table-striped mt-2">
+                      <tbody>
+                        <tr>
+                          <th>Importer</th>
+                          <td>
+                            Skechers South Asia Pvt. Ltd. Fulcrum, 803 & 804,
+                            B-wing, Sahar Road, Next to Hyatt Regency, Andheri
+                            East, Mumbai - 400099
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <th>Item Weight</th>
+                          <td>600 g</td>
+                        </tr>
+
+                        <tr>
+                          <th>Generic Name</th>
+                          <td>Walking Shoes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- End .tab-pane -->
+            </div>
+            <!-- End .tab-content -->
+          </div>
+          <!-- End .product-single-tabs -->
+        </div>
+        <!-- End .container -->
+      </main>
+      <!-- End .main -->
+
+      <footer class="footer bg-dark">
+        <div class="footer-middle">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="widget">
+                  <h4 class="widget-title">About</h4>
+
+                  <ul class="links">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                  </ul>
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="widget">
+                  <h4 class="widget-title">Help</h4>
+
+                  <ul class="links">
+                    <li><a href="#">Payments</a></li>
+                    <li><a href="#">Shippings</a></li>
+                    <li><a href="#">Cancelaation & Returns</a></li>
+                    <li><a href="#">FAQ</a></li>
+                  </ul>
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="widget">
+                  <h4 class="widget-title">Consumer Policy</h4>
+
+                  <ul class="links">
+                    <li><a href="#">Cancelaation & Returns</a></li>
+                    <li><a href="terms.html">Terms of Use</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="policy.html">Privacy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                  </ul>
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+
+              <div class="col-lg-3 col-sm-6">
+                <div class="widget">
+                  <h4 class="widget-title">Contact Info</h4>
+                  <ul class="contact-info">
+                    <li>
+                      <span class="contact-info-label">Address:</span>123 Street
+                      Name, City, England
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Phone:</span
+                      ><a href="tel:">(123) 456-7890</a>
+                    </li>
+                    <li>
+                      <span class="contact-info-label">Email:</span>
+                      <a
+                        href="/cdn-cgi/l/email-protection#adc0ccc4c1edc8d5ccc0ddc1c883cec2c0"
+                        ><span
+                          class="__cf_email__"
+                          data-cfemail="f39e929a9fb3968b929e839f96dd909c9e"
+                          >[email&#160;protected]</span
+                        ></a
+                      >
+                    </li>
+                  </ul>
+                  <div class="social-icons">
+                    <a
+                      href="#"
+                      class="social-icon social-facebook icon-facebook"
+                      target="_blank"
+                      title="Facebook"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-twitter icon-twitter"
+                      target="_blank"
+                      title="Twitter"
+                    ></a>
+                    <a
+                      href="#"
+                      class="social-icon social-instagram icon-instagram"
+                      target="_blank"
+                      title="Instagram"
+                    ></a>
+                  </div>
+                  <!-- End .social-icons -->
+                </div>
+                <!-- End .widget -->
+              </div>
+              <!-- End .col-lg-3 -->
+            </div>
+            <!-- End .row -->
+          </div>
+          <!-- End .container -->
+        </div>
+        <!-- End .footer-middle -->
+
+        <div class="container">
+          <div class="footer-bottom">
+            <div class="container d-sm-flex align-items-center">
+              <div class="footer-left">
+                <span class="footer-copyright"
+                  >Copyrights @ 2025. All Rights Reserved</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- End .footer-bottom -->
+        </div>
+        <!-- End .container -->
+      </footer>
+      <!-- End .footer -->
+    </div>
+    <!-- End .page-wrapper -->
+
+    <div class="loading-overlay">
+      <div class="bounce-loader">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+    <div class="mobile-menu-overlay"></div>
+    <!-- End .mobil-menu-overlay -->
+
+    <div class="mobile-menu-container">
+      <div class="mobile-menu-wrapper">
+        <span class="mobile-menu-close"><i class="fa fa-times"></i></span>
+        <nav class="mobile-nav">
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="marketplace.html">Marketplace</a>
+            </li>
+            <li><a href="business.html">Business</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="automotive.html">Automotive</a></li>
+            <li><a href="onehubstore.html">Onehub Store</a></li>
+          </ul>
+
+          <ul class="mobile-menu mt-2 mb-2">
+            <li>
+              <a href="#">Username</a>
+              <ul>
+                <li><a href="dashboard.html">My Profile</a></li>
+                <li><a href="#">Orders</a></li>
+                <li>
+                  <a href="wishlist.html"><i class="mr-2"></i>Wishlist (9)</a>
+                </li>
+
+                <li><a href="#">Gift Cards</a></li>
+                <li><a href="prime.html">Your Membership</a></li>
+
+                <li><a href="unfollow.html">Un Following</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="seller.html">Become a Seller</a></li>
+            <li>
+              <a href="#">Help</a>
+              <ul>
+                <li><a href="#">24x7 Customer Care</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Download App</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- End .mobile-nav -->
+
+        <form class="search-wrapper mb-2" action="#">
+          <input
+            type="text"
+            class="form-control mb-0"
+            placeholder="Search for Products, Brands and More"
+            required
+          />
+          <button
+            class="btn icon-search text-white bg-transparent p-0"
+            type="submit"
+          ></button>
+        </form>
+      </div>
+      <!-- End .mobile-menu-wrapper -->
+    </div>
+    <!-- End .mobile-menu-container -->
+
+    <a id="scroll-top" href="#top" title="Top" role="button"
+      ><i class="icon-angle-up"></i
+    ></a>
+
+    <!-- Plugins JS File -->
+    <script
+      data-cfasync="false"
+      src="https://portotheme.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.updated_new.js"></script>
+  </body>
+</html>
